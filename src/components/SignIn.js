@@ -83,6 +83,7 @@ export default function SignIn() {
               label="Remember me"
             />
             <Button
+              href='/aiiedu@login/redirect=ucenickiwebservis.com&token=126re87F20Fg21Fvxy'
               type="submit"
               fullWidth
               variant="contained"
@@ -98,7 +99,7 @@ export default function SignIn() {
               </Grid>
               <Grid item>
                 <Link href="#" variant="body2">
-                  {"Prijava za Ucenike"}
+                  {"Prijava za Poslodavce"}
                 </Link>
               </Grid>
             </Grid>
