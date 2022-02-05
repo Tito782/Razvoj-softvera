@@ -44,12 +44,12 @@ function Navbar() {
                     </li>
                     <li>
                         <Link to = '/o-nama' className='nav-links' onClick={closeMobileMenu}>
-                            About
+                            O Nama
                         </Link>
                     </li>
                     <li>
                         <Link to = '/poslovi' className='nav-links' onClick={closeMobileMenu}>
-                            Services
+                            Pretraga Poslova
                         </Link>
                     </li>
                         <li>
