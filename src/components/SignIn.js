@@ -83,6 +83,7 @@ export default function SignIn() {
               label="Zapamti prijavu"
             />
             <Button
+              href=''
               type="submit"
               fullWidth
               variant="contained"
@@ -97,7 +98,7 @@ export default function SignIn() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="/aiiedu@login/redirect=ucenickiwebservis.com&token=126re87F20Fg21Fvxy" variant="body2">
                   {"AAI@EDU.hr"}
                 </Link>
               </Grid>
