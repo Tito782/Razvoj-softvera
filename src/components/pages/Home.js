@@ -1,13 +1,16 @@
+
 import React from 'react';
-import Sekcija from '../Sekcija';
+import '../../App.css';
+import HeroSection from '../HeroSection';
+
 
 
 function Home() {
   return (
     <>
-    <Sekcija/> 
+      <HeroSection /> 
     </>
-  )
+  );
 }
 
 export default Home;
