@@ -5,10 +5,10 @@ import HeroSection from '../HeroSection';
 
 
 
-function Home() {
-  return (
+function Home (){
+  return(
     <>
-      <HeroSection /> 
+      <HeroSection />
     </>
   );
 }
