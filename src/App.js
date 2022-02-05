@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import Poslovi from './components/pages/Poslovi';
 import Footer from './components/Footer';
+import ONama from './components/pages/ONama';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Home/>}></Route>
             <Route exact path='/poslovi' element={<Poslovi/>}></Route>
-            
+            <Route exact path='/prijava' element={<ONama/>}></Route>         
           </Routes>
           <Footer/>
         </Router>
