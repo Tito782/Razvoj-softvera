@@ -43,23 +43,18 @@ function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link to = '/about' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to = '/o-nama' className='nav-links' onClick={closeMobileMenu}>
                             About
                         </Link>
                     </li>
                     <li>
-                        <Link to = '/services' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to = '/poslovi' className='nav-links' onClick={closeMobileMenu}>
                             Services
                         </Link>
                     </li>
-                    <li>
-                        <Link to = '/ucenik' className='nav-links-mobile' onClick={closeMobileMenu}>
-                            Ucenik
-                        </Link>
-                    </li>
-                    <li>
-                    <Link to = '/poslodavac' className='nav-links-mobile' onClick={closeMobileMenu}>
-                            Poslodavac
+                        <li>
+                    <Link to = '/prijava' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            Prijava
                         </Link>
                     </li>
                 </ul>
