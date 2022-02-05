@@ -55,7 +55,7 @@ export default function SignIn() {
             <LockOpenIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            Prijava za Poslodavce
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -63,7 +63,7 @@ export default function SignIn() {
               required
               fullWidth
               id="email"
-              label="Email Address"
+              label="E-mail Adresa"
               name="email"
               autoComplete="email"
               autoFocus
@@ -73,7 +73,7 @@ export default function SignIn() {
               required
               fullWidth
               name="password"
-              label="Password"
+              label="Lozinka"
               type="password"
               id="password"
               autoComplete="current-password"
@@ -88,7 +88,7 @@ export default function SignIn() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign In
+              Prijavi se
             </Button>
             <Grid container>
               <Grid item xs>
@@ -98,7 +98,7 @@ export default function SignIn() {
               </Grid>
               <Grid item>
                 <Link href="#" variant="body2">
-                  {"Prijava za Učenike"}
+                  {"AAI@EDU.hr"}
                 </Link>
               </Grid>
             </Grid>
