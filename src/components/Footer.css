@@ -23,6 +23,11 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
+
+
+  .footer.label{
+    font-size: 100%;
+  }
   
   .footer-subscription-heading {
     margin-bottom: 24px;
@@ -44,6 +49,7 @@
     margin-bottom: 16px;
     border: 1px solid #fff;
   }
+  
   
   .footer-links {
     width: 100%;
