@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import { ButtonNotification } from './/ButtonNotification';
 
 function Footer() {
   return (
@@ -11,21 +12,21 @@ function Footer() {
           Uživajte u brzom i jednostavnom načinu zapošljavanja
         </p>
         <div className='input-areas'>
-          <form>
+          <form >
             <input
               className='footer-input'
               name='email'
               type='email'
               placeholder='E-mail'
             />
-            <Button buttonStyle='btn--outline'>Primaj Obavijesti</Button>
+            <ButtonNotification buttonStyle='btn--outline'>Primaj Obavijesti</ButtonNotification>
           </form>
         </div>
       </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>About Us</h2>
+            <h2 className="footer.label">O nama</h2>
             <Link to='/sign-up'>How it works</Link>
             <Link to='/'>Testimonials</Link>
             <Link to='/'>Careers</Link>
@@ -33,7 +34,7 @@ function Footer() {
             <Link to='/'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
-            <h2>Contact Us</h2>
+            <h2 className="footer.label">Kontaktirajte Nas</h2>
             <Link to='/'>Contact</Link>
             <Link to='/'>Support</Link>
             <Link to='/'>Destinations</Link>
@@ -42,14 +43,7 @@ function Footer() {
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Social Media</h2>
+            <h2 className="footer.label">Društvene Mreže</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
@@ -69,7 +63,7 @@ function Footer() {
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              to='/'
+              to= '/'
               target='_blank'
               aria-label='Facebook'
             >
