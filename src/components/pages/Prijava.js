@@ -1,7 +1,7 @@
 import React from 'react';
 import SignIn from '../SignIn';
 
-function ONama() {
+function Prijava() {
   return (
   <div>
     <SignIn/>
@@ -9,4 +9,4 @@ function ONama() {
   )
 }
 
-export default ONama;
+export default Prijava;

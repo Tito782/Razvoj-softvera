@@ -93,12 +93,12 @@ export default function SignIn() {
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
-                  Forgot password?
+                  Zaboravili ste lozinku??
                 </Link>
               </Grid>
               <Grid item>
                 <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                  {"Prijava za Ucenike"}
                 </Link>
               </Grid>
             </Grid>
