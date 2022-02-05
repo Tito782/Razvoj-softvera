@@ -1,13 +1,13 @@
 video{
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 93%;
     position: fixed;
     z-index: -1;
 }
 
 .hero-container{
-    /*background: url('/public/images/img-home.jpg') center center/cover no-repeat; */
+    /*background: url('/public/images/img-home.jpg') center center/cover no-repeat;*/
     height: 100vh;
     width: 100%;
     display: flex;
@@ -21,4 +21,5 @@ h1,p{
 }
 .boja{
     color: white;
+    text-align: center;
 }
