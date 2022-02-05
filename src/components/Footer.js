@@ -16,9 +16,9 @@ function Footer() {
               className='footer-input'
               name='email'
               type='email'
-              placeholder='Your Email'
+              placeholder='E-mail'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button buttonStyle='btn--outline'>Primaj Obavijesti</Button>
           </form>
         </div>
       </section>

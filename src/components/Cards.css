@@ -4,7 +4,12 @@
     align-items: center;
   }
   
-  h1 {
+  .centriraj{
+    text-align: center;
+    color: black;
+    padding-top: 30%;
+  }
+  h1{
     text-align: center;
     color: black;
   }
@@ -120,3 +125,24 @@
       margin-bottom: 2rem;
     }
   }
+  .animation{
+    padding-left: 50%;
+    margin-left: 48%;
+    font-size: 1000%;
+    -webkit-transform: rotate(90deg);
+    display: inline-block;
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-top: 50%;
+    }
+    
+    @keyframes MoveUpDown {
+      0%, 100% {
+        bottom: 0;
+      }
+      50% {
+        bottom: 100px;
+      }
+    }
