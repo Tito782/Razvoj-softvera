@@ -17,8 +17,8 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href = "/">
+        UčeničkiWebServis
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -80,7 +80,7 @@ export default function SignIn() {
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
+              label="Zapamti prijavu"
             />
             <Button
               type="submit"
@@ -93,12 +93,12 @@ export default function SignIn() {
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
-                  Zaboravili ste lozinku??
+                  Zaboravili ste lozinku?
                 </Link>
               </Grid>
               <Grid item>
                 <Link href="#" variant="body2">
-                  {"Prijava za Ucenike"}
+                  {"Prijava za Učenike"}
                 </Link>
               </Grid>
             </Grid>
