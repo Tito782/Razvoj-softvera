@@ -23,7 +23,7 @@ function AAIEDU() {
 					<input type="checkbox" id="toggle-password"/>
 					<label for="toggle-password">Pokaži zaporku</label>
 				</div>
-				<button type="submit" class="login-btn" aria-label="Kliknite ovdje za prijavu svojim e-identitetom iz sustava AAI@EduHr" tabindex="3" name="Submit"><a href="localhost:3000">PRIJAVA</a></button>
+				<button type="submit" class="login-btn" aria-label="Kliknite ovdje za prijavu svojim e-identitetom iz sustava AAI@EduHr" tabindex="3" name="Submit"><a href="localhost:3000/prijava">PRIJAVA</a></button>
 				<div class="bottom-links">
 					<p><a href="https://www.aaiedu.hr/pomoc" title="Kliknite ovdje za pomoć." target="_blank">Pomoć</a></p>
 					<small class="version">Pišo v3.0</small>

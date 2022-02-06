@@ -26,6 +26,10 @@ function Copyright(props) {
   );
 }
 
+  function scrollToTop() {
+  window.scrollTo(0, 0);
+  }
+
 const theme = createTheme();
 
 export default function SignIn() {
@@ -41,6 +45,7 @@ export default function SignIn() {
 
   return (
     <ThemeProvider theme={theme}>
+      <br/><br/><br/>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -98,7 +103,7 @@ export default function SignIn() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/aiiedu@login/redirect=ucenickiwebservis.com&token=126re87F20Fg21Fvxy" variant="body2">
+                <Link href="/AAIEDU" variant="body2">
                   {"AAI@EDU.hr"}
                 </Link>
               </Grid>
@@ -107,6 +112,7 @@ export default function SignIn() {
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </ThemeProvider>
   );
 }
