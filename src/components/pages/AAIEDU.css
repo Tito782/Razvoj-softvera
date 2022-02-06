@@ -332,3 +332,7 @@
 			right: 20px;
 			transform: translateY(-50%);
 		}
+
+		.Container {
+			background-color: #f9fbff;
+		}
