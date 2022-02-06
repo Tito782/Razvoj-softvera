@@ -1,0 +1,334 @@
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			font-family: 'Roboto', sans-serif;
+			box-sizing: border-box
+		}
+
+		body {
+			background-color: #f9fbff
+		}
+
+		.source-image {
+			width: 100%;
+			background-repeat: no-repeat;
+			background-size: auto;
+			position: fixed;
+			max-width: 100%;
+			display: block
+		}
+
+		#login-form {
+			width: 460px;
+			background: 0 0;
+			padding: 80px 40px;
+			position: absolute;
+			left: 50%;
+			top: 40%;
+			transform: translate(-50%, -50%);
+			margin: 20px 0
+		}
+
+		.input_img {
+			position: absolute;
+			bottom: 20px;
+			left: 13px;
+			height: 30px
+		}
+
+		#login-form h1 {
+			text-align: center;
+			margin-bottom: 60px;
+			color: #191c3c;
+			font-size: 30px
+		}
+
+		.logoHolder>img {
+			width: 60%;
+			margin-bottom: 12px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block
+		}
+
+		#login-form p {
+			font-size: 16px;
+			color: #333
+		}
+
+		#login-form p a {
+			color: #191c3c;
+			text-decoration: underline;
+			font-weight: 700;
+		}
+
+		#login-form p {
+			font-size: 16px;
+			color: #333
+		}
+
+		#login-form .entryText {
+
+			font-size: 15px;
+			text-align: center;
+		}
+
+		#login-form p a:focus {
+			border: 1px solid #515772
+		}
+
+		#login-form label {
+			color: #4a4d67;
+			font-weight: 700;
+			margin-bottom: 10px !important
+		}
+
+		.input-box {
+			position: relative;
+			margin: 30px 0
+		}
+
+		.input-box input {
+			font-size: 15px;
+			color: #333;
+			border: 1px solid #51577245;
+			width: 100%;
+			line-height: 1.2;
+			font-size: 18px;
+			outline: 0;
+			background: #fff;
+			padding: 0 5px;
+			height: 72px;
+			border-radius: 5px;
+			padding-left: 57px;
+			box-shadow: 0 3px 11px 0 rgba(81, 87, 114, .2);
+			margin-top: 15px
+		}
+
+		.input-box input:focus {
+			border: 1px solid #515772
+		}
+
+		.input-box span::before {
+			content: attr(data-placeholder);
+			position: absolute;
+			top: 50%;
+			left: 5px;
+			color: #515772;
+			transform: translateY(-50%);
+			z-index: 0;
+			transition: .5s;
+			padding-left: 20px
+		}
+
+		.validation {
+
+			border-color: #c00000 !important;
+			margin-bottom: 7px;
+
+		}
+
+		.feedback {
+			color: #c00000;
+		}
+		
+		.error {
+			color: #c00000;
+			font-weight: bold;
+			text-align: center;
+			margin: 30px 0;
+		}
+
+		::placeholder {
+			margin-left: 60px;
+			color: #8b8d9d;
+			font-size: 14px;
+			font-weight: 700;
+		}
+
+		.cursor {
+			width: 17px
+		}
+
+		.input-box span::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			background: linear-gradient(120deg, #2196F3, #FF5722);
+			transition: .5s
+		}
+
+		.focus+span::before {
+			top: -5px
+		}
+
+		.focus+span::after {
+			width: 100%
+		}
+
+		.login-btn {
+			display: block;
+			width: 100%;
+			height: 62px;
+			border: none;
+			background: #515772;
+			background-size: 200%;
+			color: #fff;
+			outline: 0;
+			cursor: pointer;
+			margin: 20px 0 0;
+			border-radius: 8px;
+			transition: .5s;
+			font-size: 18px;
+			letter-spacing: 1px;
+			font-weight: 700
+		}
+
+		.login-btn:focus {
+			border: 2px solid #000
+		}
+
+		.login-btn:hover {
+			background-color: #2d3142
+		}
+
+		.bottom-links {
+			margin-top: 30px;
+			text-align: center;
+			font-size: 13px
+		}
+
+		.versionText {
+			background: transparent;
+			position: fixed;
+			inline-size: -webkit-fill-available;
+			bottom: 10px;
+			z-index: 0;
+			text-align: right;
+			font-size: 13px;
+			margin-right: 20px;
+		}
+
+		.bottom-links>p>a {
+			text-decoration: underline;
+		}
+
+		.bottom-links>p {
+			margin-bottom: 30px;
+		}
+
+		@media (max-width:768px) {
+			#login-form {
+				top: 45%;
+				padding: 0;
+			}
+
+			.source-image {
+				display: none
+			}
+
+			.versionText {
+				right: 0% !important;
+				align-items: center;
+				text-align: center;
+			}
+		}
+
+		@media (max-width:576px) {
+			#login-form {
+				width: 90%;
+				top: 50%;
+				padding: 0;
+			}
+
+			.source-image {
+				display: none
+			}
+
+			.versionText {
+				right: 0% !important;
+				align-items: center;
+				text-align: center;
+			}
+
+		}
+
+		@media (max-width:320px) {
+			#login-form {
+				width: 90%;
+				top: 50%;
+				padding: 0;
+			}
+
+			.source-image {
+				display: none
+			}
+
+			.versionText {
+				right: 0% !important;
+				align-items: center;
+				text-align: center;
+			}
+		}
+
+		@media (max-width:1440px) and (min-width:1024px) {
+			#login-form {
+
+				top: 45%;
+				padding: 0;
+			}
+
+			.versionText {
+				right: 0% !important;
+				align-items: center;
+				text-align: center;
+			}
+		}
+
+		.version {
+			font-size: 13px;
+			margin-top: 10px;
+		}
+
+		.wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+		}
+		#password {
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABFUlEQVQ4jeXUzS7DQRQF8F+ri+4qWguWymNYi+eQsvXxYNJINJaCB8BWJUjrJUQt/hfTyfwbtpzkbs6cOfdjboZ/h8aCsxZ2sY214Ka4xghvP02yhBO8YlYTUxyHdiFWcVMweI7I+Sv06sy6uM8unGIj0fQxzDR3cXcOTVwUzBpYxn5EJ7S56Sj4LxxkgveobBmPCT8O081C+4NPs7ZqyOnhU02i9GI+0ynac2UWMFtwlq/cnHZQqKQfLY8T7iFa3iro91LDpmqwqWAYfCcSDnw/ylmmPS9UrKtagdx0M9FsFcxusVI3l55qWfN2XiJy/lJhB3M0cYRJweAzJjiU7Z5S3wla2FF9DuvBTaODC7/4HP44PgAK54Ck2yozPgAAAABJRU5ErkJggg==');
+			background-position: 97% center;
+			background-repeat: no-repeat;
+			padding-right: 50px;
+		}
+
+		#password.visible {
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABgklEQVQ4jbXUsU4VQRQG4I/lIpdwQyEURC20NJEYGqmMBSY+AMaEUBIeQKHBRi15ARqww0KtDbEyEX0BQkdBgnrpsaDQ3EsxZ2VY9obi4p9MZvfMf/6dc+af5T+juEqx1/iIoX5EGjEXuIun6GABf/EAc5gMThvfsB3rl4q/RzfmBm5iP2L5aOMFBi8TncTvimgLozHuYRkHwdnBRC+xcewFcbciCncwEs/XsCa1Zzdyz6HA5xBZ6VH+LXzBTJa3GpxtFYcsxcJGFmvhpIdoM+NtBmepDDSlJv8KkRKPg/izRvR2xhuL/DaajWxhoLLtPzGv4z6exXtpqRKd+KBs/lfyZkZs4geO8bJmpyXeRnwxiymkxnalRpeYwaEz/1V72pJ8+ikqPIdxyQIdyRLD2U4fYVbyYp35r1fFSkxIZu1K5l3BlDNzT+ON1MO68mtR4Ll06tUrl1+9r3WiF+rO0MATPMSNSD7Cd+kSdPBOOv0PmI9YXxjEFl71K5TjSn/KF3AKMxVuB7o+1KsAAAAASUVORK5CYII=');
+		}
+
+		#toggle-password {
+			display: none;
+		}
+
+		#toggle-password+label {
+			text-indent: -9999px;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-left: -32px;
+			cursor: pointer !important;
+			position: absolute;
+			top: 70px;
+			right: 20px;
+			transform: translateY(-50%);
+		}
