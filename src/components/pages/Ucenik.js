@@ -1,10 +1,15 @@
 import React from "react";
+import Footer from "../Footer";
+import Navbar from "../Navbar";
 
 function Ucenik(){
     
     window.scrollTo(0,0);
     
     return(
+
+        <>
+        <Navbar/>
         <div className="table-ucenik">
             <table>
                 <tr>
@@ -33,6 +38,8 @@ function Ucenik(){
                 </tr>
             </table>
         </div>
+        <Footer/>
+        </>
     )
 }
 export default Ucenik;
