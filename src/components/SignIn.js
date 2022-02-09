@@ -85,7 +85,7 @@ export default function SignIn() {
               label="Zapamti prijavu"
             />
             <Button
-              href=''
+              to="/"
               type="submit"
               fullWidth
               variant="contained"
@@ -95,7 +95,7 @@ export default function SignIn() {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link to = "/resetpassword" variant="body2">
                   Zaboravili ste lozinku?
                 </Link>
               </Grid>
