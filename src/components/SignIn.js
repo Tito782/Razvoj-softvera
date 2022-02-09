@@ -14,6 +14,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function Copyright(props) {
+  window.scrollTo(0, 0);
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
@@ -25,10 +26,6 @@ function Copyright(props) {
     </Typography>
   );
 }
-
-  function scrollToTop() {
-  window.scrollTo(0, 0);
-  }
 
 const theme = createTheme();
 
