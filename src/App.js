@@ -6,6 +6,7 @@ import Poslovi from './components/pages/Poslovi';
 import ONama from './components/pages/ONama';
 import Prijava from './components/pages/Prijava';
 import AAIEDU from './components/pages/AAIEDU';
+import Ucenik from './components/pages/Ucenik';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route exact path='/poslovi' element={<Poslovi/>}></Route>
             <Route exact path='/prijava' element={<Prijava/>}></Route>      
             <Route exact path='/AAIEDU' element={<AAIEDU/>}></Route>  
+            <Route exact path="/ucenik" element={<Ucenik/>}></Route>
           </Routes>
         </Router>
       </>
