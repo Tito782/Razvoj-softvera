@@ -1,9 +1,7 @@
 import React from 'react';
 import SignIn from '../SignIn';
-import AAIEDU from './AAIEDU';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import ScrollToTop from '../ScrollToTop';
 
 function Prijava() {
 
