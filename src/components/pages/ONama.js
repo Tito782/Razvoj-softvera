@@ -10,7 +10,7 @@ function ONama() {
   return (
     <div>
       <Navbar/>
-        <img src = './images/onama.jpg'/ alt="O Nama">
+        <img src = './images/onama.jpg' alt="O Nama"/>
         <br/><br/><br/><br/><br/><br/>
         
         <h2 className='text'>O Nama</h2>
