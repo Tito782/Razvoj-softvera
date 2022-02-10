@@ -85,7 +85,7 @@ export default function SignIn() {
               label="Zapamti prijavu"
             />
             <Button
-              to="/"
+              href="/poslodavac"
               type="submit"
               fullWidth
               variant="contained"
@@ -95,12 +95,12 @@ export default function SignIn() {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link to = "/resetpassword" variant="body2">
+                <Link href = "/resetpassword" variant="body2">
                   Zaboravili ste lozinku?
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/prijava-aaiedu" variant="body2">
+                <Link href="https://www.ucenickiwebservis.com/prijava-aaiedu" variant="body2">
                   {"AAI@EDU.hr"}
                 </Link>
               </Grid>
