@@ -28,13 +28,13 @@ function Cards() {
               src='images/programer.jpg'
               text='Programer/ka'
               label='Struka'
-              path='/poslovi'
+              path='/'
             />
             <CardItem
               src='images/bakmaz.jpg'
               text='Prodavač/ica'
               label='Struka'
-              path='/poslovi'
+              path='/prijava'
             />
             <CardItem
               src='images/pitur.jpg'
@@ -42,7 +42,6 @@ function Cards() {
               label='Struka'
               path='/prijava'
             />
-
           </ul>
         </div>
       </div>
