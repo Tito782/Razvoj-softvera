@@ -1,0 +1,27 @@
+.user-component{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    margin-right:15%;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 5%;
+    align-items: left;
+    height: 400%;
+
+}
+.slika{
+    height:30%;
+    width: 30%;
+    border-radius: 80%;
+}
+.info{
+    font-size: 80%;
+    text-align: left;
+}
+.upper-component{
+    padding-top:-10%;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 5%;
+}
