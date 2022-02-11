@@ -4,7 +4,7 @@ import Cards from '../Cards';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
 import './Poslovi.css';
-import './footer-aaiedu.css';
+
 
 function Home (){
 

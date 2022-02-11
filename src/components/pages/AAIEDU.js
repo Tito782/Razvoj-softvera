@@ -1,6 +1,5 @@
 import React from 'react';
 import './AAIEDU.css';
-import './footer-aaiedu.css'
 
 function AAIEDU() {
   return (
