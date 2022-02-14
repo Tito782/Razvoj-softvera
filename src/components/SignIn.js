@@ -100,7 +100,7 @@ export default function SignIn() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/ucenik" variant="body2">
+                <Link to="/ucenik" variant="body2">
                   {"AAI@EDU.hr"}
                 </Link>
               </Grid>
