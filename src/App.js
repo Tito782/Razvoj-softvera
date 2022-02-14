@@ -16,11 +16,11 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Pocetna/>}></Route>
             <Route exact path='/o-nama' element={<ONama/>}/>
-            <Route exact path='/poslovi' element={<Poslovi/>}></Route>
+            <Route  path='/poslovi' element={<Poslovi/>}></Route>
             <Route exact path='/prijava' element={<Prijava/>}></Route>      
             <Route exact path='/prijava-aaiedu' element={<AAIEDU/>}></Route>  
             <Route exact path="/ucenik" element={<Ucenik/>}></Route>
-            <Route exact path='/poslodavac' element={<Poslodavac/>}></Route>
+            <Route  path='/poslodavac' element={<Poslodavac/>}></Route>
           </Routes>
         </Router>
       </>
