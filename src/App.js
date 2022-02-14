@@ -15,7 +15,7 @@ function App() {
         <Router>
           <Routes>
             <Route exact path='/' element={<Pocetna/>}></Route>
-            <Route path='/prijava-aaiedu' element={<ONama/>}/>
+            <Route path='/o-nama' element={<ONama/>}/>
             <Route path='/poslovi' element={<Poslovi/>}></Route>
             <Route path='/prijava' element={<Prijava/>}></Route>      
             <Route path='/prijava-aaiedu' element={<UcenikPrijava/>}></Route>  
