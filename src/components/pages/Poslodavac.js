@@ -13,7 +13,7 @@ function Poslodavac(){
                     <div>
                         <table className=''>
                             <tr>
-                            <td><img  className = 'slika' src = '/images/user-profile.jpg'/></td>
+                            <td><img  className = 'slika' alt='' src = '/images/user-profile.jpg'/></td>
                         
                             
                                 <td>Bok</td>
