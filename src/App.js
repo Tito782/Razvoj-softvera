@@ -18,7 +18,7 @@ function App() {
             <Route path='/o-nama' element={<ONama/>}/>
             <Route path='/poslovi' element={<Poslovi/>}></Route>
             <Route path='/prijava' element={<Prijava/>}></Route>      
-            <Route path='/prijava-aaiedu' element={<AAIEDU/>}></Route>  
+            <Route path='/prijava-aaiedu' element={<UcenikPrijava/>}></Route>  
             <Route path="/ucenik" element={<Ucenik/>}></Route>
             <Route path='/poslodavac' element={<Poslodavac/>}></Route>
           </Routes>
