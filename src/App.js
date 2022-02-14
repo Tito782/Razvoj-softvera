@@ -5,7 +5,7 @@ import Pocetna from './components/pages/Pocetna';
 import Poslovi from './components/pages/Poslovi';
 import ONama from './components/pages/ONama';
 import Prijava from './components/pages/Prijava';
-import AAIEDU from './components/pages/AAIEDU';
+import UcenikPrijava from './components/pages/AAIEDU';
 import Ucenik from './components/pages/Ucenik';
 import Poslodavac from './components/pages/Poslodavac';
 
