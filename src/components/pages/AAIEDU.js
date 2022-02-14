@@ -1,7 +1,7 @@
 import React from 'react';
 import './AAIEDU.css';
 
-function AAIEDU() {
+function UcenikPrijava() {
   return (
     <div className='Container'>
         <form action="/ucenik" id="login-form" method="get" name="f">
@@ -32,4 +32,4 @@ function AAIEDU() {
   )
 }
 
-export default AAIEDU;
+export default UcenikPrijava;
