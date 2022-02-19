@@ -12,6 +12,7 @@ import LockOpenIcon from '@material-ui/icons/LockOpen';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Input } from '@mui/material';
 
 function Copyright(props) {
   window.scrollTo(0, 0);
@@ -25,6 +26,15 @@ function Copyright(props) {
       {'.'}
     </Typography>
   );
+
+}
+
+function submitcheck() {
+  if(document.getElementById("email").value.indexOf("@skole.hr") > -1) {
+    
+  } else {
+    this.props.history.push('/');
+  }
 }
 
 const theme = createTheme();
@@ -32,12 +42,13 @@ const theme = createTheme();
 export default function SignIn() {
   const handleSubmit = (event) => {
     event.preventDefault();
+    this.props.history.push('/prijava-aaiedu');
     const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
     console.log({
       email: data.get('email'),
       password: data.get('password'),
     });
+
   };
 
   return (
@@ -69,6 +80,7 @@ export default function SignIn() {
               name="email"
               autoComplete="email"
               autoFocus
+              
             />
             <TextField
               margin="normal"
@@ -90,7 +102,8 @@ export default function SignIn() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-            >
+              onclick="submitcheck()"
+            > 
               Prijavi se
             </Button>
             <Grid container>
