@@ -43,12 +43,12 @@ function Navbar() {
                     </li>
                     <li>
                         <Link to = '/o-nama' className='nav-links' onClick={closeMobileMenu}>
-                            O Nama
+                            O nama
                         </Link>
                     </li>
                     <li>
                         <Link to = '/poslovi' className='nav-links' onClick={closeMobileMenu}>
-                            Pretraga Poslova
+                            Pretraga poslova
                         </Link>
                     </li>
                         <li>
