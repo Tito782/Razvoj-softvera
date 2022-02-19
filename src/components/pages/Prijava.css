@@ -1,0 +1,46 @@
+.tablica{
+    margin-left: 24%;
+}
+
+  @media only screen and (min-width: 1200px) {
+    .tablica {
+      width: 84%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .tablica {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .tablica {
+      margin-bottom: 2rem;
+    }
+  }
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 100px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .tablica {
+      display: flex;  
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin-right: 10%;
+    }
+  
+    .tablica .tr {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .tablica .td {
+      white-space: nowrap;
+    }
+  }

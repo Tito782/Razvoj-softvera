@@ -25,6 +25,7 @@ function Copyright(props) {
       {'.'}
     </Typography>
   );
+
 }
 
 const theme = createTheme();
@@ -71,6 +72,7 @@ export default function SignIn() {
               name="email"
               autoComplete="email"
               autoFocus
+              
             />
             <TextField
               margin="normal"
@@ -92,7 +94,8 @@ export default function SignIn() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-            >
+              onclick="submitcheck()"
+            > 
               Prijavi se
             </Button>
             <Grid container>
