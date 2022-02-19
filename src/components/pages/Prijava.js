@@ -2,7 +2,6 @@ import React from 'react';
 import SignIn from './SignIn';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import TestnaPrijava from '../pages/TestnaPrijava';
 import './Prijava.css'
 
 function Prijava() {
@@ -13,7 +12,7 @@ function Prijava() {
   <div>
      <>	  
        <Navbar/>
-       <TestnaPrijava/>  
+       <SignIn/>  
        <Footer/>
       </> 
   </div>
