@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -32,12 +32,14 @@ const theme = createTheme();
 export default function SignIn() {
   const handleSubmit = (event) => {
     event.preventDefault();
+
     const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+    if(data.get('email').split('@')[1] == 'skole.hr'){
+      window.location.href= '/prijava-aaiedu';
+    }
+    else
+      window.location.href="/poslodavac";
+
   };
 
   return (
@@ -85,7 +87,7 @@ export default function SignIn() {
               label="Zapamti prijavu"
             />
             <Button
-              href="/poslodavac"
+              //onClick={handleSubmit}
               type="submit"
               fullWidth
               variant="contained"

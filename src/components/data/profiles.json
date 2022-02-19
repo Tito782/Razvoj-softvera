@@ -1,0 +1,39 @@
+{
+    "ucenici":
+        [
+            {
+                "ime":"Tomislav",
+                "prezime":"Hrvatina",
+                "e-mail":"t.hrv@gmail.com",
+                "Rodenje":"2/12/2003",
+                "Skola":"Strukovna škola Vice Vlatkovića, Zadar",
+                "Smjer":"Drvodjelni Tehničar"
+            },
+            {
+                "ime":"Mate",
+                "prezime":"Mišokovač",
+                "e-mail":"mmk@gmail.com",
+                "Rodenje":"1/1/2004",
+                "Skola":"Strukovna škola Vice Vlatkovića, Zadar",
+                "Smjer":"Drvodjelni Tehničar"
+            }
+        ],
+        "poslodavci": [
+            {
+                "ime":"David",
+                "prezime":"Vukoša",
+                "e-mail":"david.vukosa@strabag.hr",
+                "Rodenje":"3/4/1976",
+                "Kompanija":"Strabag d.o.o",
+                "Titula":"mag. ing. Građevine"
+            },
+            {
+                "ime":"",
+                "prezime":"Josipčević",
+                "e-mail":"josip.josipcevic@strabag.hr",
+                "Rodenje":"15/7/1988",
+                "Kompanija":"Softver d.o.o",
+                "Titula":"dipl. ing. comp."
+            }
+        ]
+}

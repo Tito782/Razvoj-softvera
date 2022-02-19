@@ -1,0 +1,65 @@
+[
+    {
+        "naslov":"Pomoćni konobar",
+        "autor":"Hoteli d.d.",
+        "ponuda":"4500 HRK/mj",
+        "grad":"Zadar",
+        "Opis":"Traži se osoba da bude dio Falkensteinr Obitelji :)",
+        "Pozicije":"7",
+        "Vrsta":"Hoteljerstvo-i-ugostiteljstvo"
+    },
+    {
+        "naslov":"Pomoćni konobar",
+        "autor":"Grupa Zagreb d.d.",
+        "ponuda":"4500 HRK/mj",
+        "grad":"Zadar",
+        "Opis":"Traži se osoba... ",
+        "Pozicije":"5",
+        "Vrsta":"Hoteljerstvo-i-ugostiteljstvo"
+    },
+    {
+        "naslov":"Pomoćni kuhar",
+        "autor":"Hoteli d.d.",
+        "ponuda":"5000 HRK/mj",
+        "grad":"Zadar",
+        "Opis":"Traži se osoba... ",
+        "Pozicije":"3",
+        "Vrsta":"Hoteljerstvo-i-ugostiteljstvo"
+    },
+    {
+        "naslov":"Privremeni električar",
+        "autor":"Ehefrauen-Sohn GmbH",
+        "ponuda":"3500 HRK/mj",
+        "grad":"Zadar",
+        "Opis":"Traži se osoba... ",
+        "Pozicije":"1",
+        "Vrsta":"Elektrotehnika"
+    },
+    {
+        "naslov":"Pomoćni cvjećar",
+        "autor":"Sonjini Cvjetovi d.o.o",
+        "ponuda":"4500 HRK/mj",
+        "grad":"Split",
+        "Opis":"Traži se osoba... ",
+        "Pozicije":"2",
+        "Vrsta":"Cvjećarstvo"
+    },
+    {
+        "naslov":"Vodoinstalater",
+        "autor":"Mirko d.o.o",
+        "ponuda":"4500 HRK/mj",
+        "grad":"Zagreb",
+        "Opis":"Traži se osoba... ",
+        "Pozicije":"1",
+        "Vrsta":"Vodoinstalacije"
+    },
+    {
+        "naslov":"Junior Web stack developer",
+        "autor":"Gary's software Inc.",
+        "ponuda":"6000 HRK/mj",
+        "grad":"Zagreb/Rijeka/Split",
+        "Opis":"Traži se osoba... ",
+        "Pozicije":"4",
+        "Vrsta":"IT"
+    }
+]
