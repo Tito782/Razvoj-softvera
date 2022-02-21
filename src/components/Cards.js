@@ -5,8 +5,6 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <span className='animation'>&#187;</span>
-      <h1 className='centriraj'>Pronađite savršen posao za sebe!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -16,31 +14,37 @@ function Cards() {
               label='Struka'
               path='/poslovi'
             />
+          </ul>
+          <ul className='cards__items'>
             <CardItem
-              src='images/konobar.jpg'
-              text='Konobar/ica'
+              src='images/mehanicar.jpg'
+              text='Mehaničar/ka'
               label='Struka'
               path='/poslovi'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/programer.jpg'
-              text='Programer/ka'
+              src='images/mehanicar.jpg'
+              text='Mehaničar/ka'
               label='Struka'
-              path='/'
+              path='/poslovi'
             />
+          </ul>
+          <ul className='cards__items'>
             <CardItem
-              src='images/bakmaz.jpg'
-              text='Prodavač/ica'
+              src='images/mehanicar.jpg'
+              text='Mehaničar/ka'
               label='Struka'
-              path='/prijava'
+              path='/poslovi'
             />
+          </ul>
+          <ul className='cards__items'>
             <CardItem
-              src='images/pitur.jpg'
-              text='Soboslikar/ica'
+              src='images/mehanicar.jpg'
+              text='Mehaničar/ka'
               label='Struka'
-              path='/prijava'
+              path='/poslovi'
             />
           </ul>
         </div>

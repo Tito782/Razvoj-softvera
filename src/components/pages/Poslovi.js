@@ -14,6 +14,8 @@ function Home (){
       <>
         <Navbar/>
         <h1 className="usluge">Dobrodošli u pretragu poslova!</h1>
+        <span className='animation'>&#187;</span>
+        <h1 className='centriraj'>Pronađite savršen posao za sebe!</h1>
         <Cards />
         <Footer/>
       </>

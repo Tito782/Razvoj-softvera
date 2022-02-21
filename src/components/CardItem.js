@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PeopleIcon from '@mui/icons-material/People';
 
 function CardItem(props) {
   return (
@@ -15,6 +17,17 @@ function CardItem(props) {
           </figure>
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>{props.text}</h5>
+            <h5 className='cards__item__text__author'>{props.text}</h5>
+          </div>
+          <div>
+              <p className='cards__item__location'>
+                <LocationOnIcon className='cards__item__icon'/>
+                {props.text}
+              </p>
+              <p className='cards__item__location'>
+                <PeopleIcon className='cards__item__icon'/>
+                2
+              </p>
           </div>
         </Link>
       </li>
