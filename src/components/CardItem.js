@@ -22,11 +22,11 @@ function CardItem(props) {
           <div>
               <p className='cards__item__location'>
                 <LocationOnIcon className='cards__item__icon'/>
-                {props.text}
+                {props.grad}
               </p>
               <p className='cards__item__location'>
                 <PeopleIcon className='cards__item__icon'/>
-                2
+                {props.pozicije}
               </p>
           </div>
         </Link>
