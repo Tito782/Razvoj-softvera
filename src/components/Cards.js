@@ -11,14 +11,15 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             {Oglasi.map(element => {
-              <CardItem 
+              return <CardItem 
                 key = {element.naslov}
                 src='images/konobar.jpg'
                 text= {element.naslov}
                 label='Struka'
                 path='/poslovi'
                 pozicije = {element.Pozicije}
-                grad = {element.grad}>
+                grad = {element.grad}
+                autor = {element.autor}>
               </CardItem>
             })}
           </ul>

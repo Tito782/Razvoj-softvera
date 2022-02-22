@@ -17,7 +17,7 @@ function CardItem(props) {
           </figure>
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>{props.text}</h5>
-            <h5 className='cards__item__text__author'>{props.text}</h5>
+            <h5 className='cards__item__text__author'>{props.autor}</h5>
           </div>
           <div>
               <p className='cards__item__location'>
