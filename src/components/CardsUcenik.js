@@ -9,7 +9,7 @@ function Cards() {
 
   function setExtra(i) {
     if(showExtra)
-      document.getElementById(i).style.display = 'block';
+      document.getElementById(i).style.display = 'flex';
     else
       document.getElementById(i).style.display = 'none';
 
@@ -25,16 +25,17 @@ function Cards() {
               return (<div onClick={() => setExtra(element.key)}>
                 <CardItem 
                   key = {element.key}
-                  src={element.Slika}
+                  src={'../' + element.Slika}
                   text= {element.naslov}
                   label='Struka'
-                  path='/poslovi'
+                  path='/poslovi/ucenik'
                   pozicije = {element.Pozicije}
                   grad = {element.grad}
                   autor = {element.autor}>
                 </CardItem>
                 <div className='extra__info' id={`${element.key}`} style={{display:'none'}}>
-                  <div className='text__opis'>{element.Opis}</div>
+                  <div className='tekst opis'>{element.Opis}</div>
+                  <div className='tekst vrsta'> Vrsta: {element.Vrsta}</div>
                 </div>
               </div>);
             })}

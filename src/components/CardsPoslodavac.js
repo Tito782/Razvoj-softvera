@@ -25,10 +25,10 @@ function Cards() {
               return (<div onClick={() => setExtra(element.key)}>
                 <CardItem 
                   key = {element.key}
-                  src={element.Slika}
+                  src={'../' + element.Slika}
                   text= {element.naslov}
                   label='Struka'
-                  path='/poslovi'
+                  path='/poslovi/poslodavac'
                   pozicije = {element.Pozicije}
                   grad = {element.grad}
                   autor = {element.autor}>
