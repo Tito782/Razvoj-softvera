@@ -144,9 +144,11 @@ h1{
   position: relative;
   z-index: 10;
 }
+
 .tekst {
   color:aliceblue;
   font-size: 15px;
+  padding: 5px 10px;
 }
 
 .opis {
@@ -154,6 +156,25 @@ h1{
   margin: 15px 1px;
 }
 
+.isClicked {
+  background-color: #33394d;
+  color: #4e5466;
+}
+
+.notClicked {
+  background-color: #fff;
+  color: #252e48;
+}
+
+.botun {
+  margin: 15px ;
+  height: 40px;
+  width: 30%;
+  align-self: center;
+  min-width: 50px;
+  border-radius: 15px;
+  border: 0;
+}
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {

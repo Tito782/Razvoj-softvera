@@ -34,7 +34,7 @@ function Cards() {
                   autor = {element.autor}>
                 </CardItem>
                 <div className='extra__info' id={`${element.key}`} style={{display:'none'}}>
-                  <div className='text__opis'>{element.Opis}</div>
+                  <div className='tekst opis'>{element.Opis}</div>
                 </div>
               </div>);
             })}
