@@ -4,6 +4,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PeopleIcon from '@mui/icons-material/People';
 
 function CardItem(props) {
+
   return (
     <>
       <li className='cards__item'>

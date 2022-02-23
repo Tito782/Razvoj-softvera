@@ -29,18 +29,23 @@ h1{
 }
 
 .cards__items {
-  display: flex;
+
   flex-direction: column;
   margin-bottom: 24px;
   width: 100%;
+  position: static;
 }
 
 .cards__item {
   display: flex;
+  flex-direction: column;
   flex: 1;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 1rem 0rem;
   border-radius: 10px;
   max-height: 125px;
+  position: relative;
+  z-index: 11;
+  background-color: aliceblue;
 }
 
 .cards__item__link {
@@ -77,6 +82,7 @@ h1{
   color: #fff;
   background-color: #1f98f4;
   box-sizing: border-box;
+  border-top-right-radius: 10px;
 }
 
 .cards__item__img {
@@ -101,17 +107,19 @@ h1{
 
 .cards__item__info {
   padding: 20px 30px 30px;
+  width: 600px;
 }
 
 .cards__item__location {
   display: flex;
   padding: 25px 10px 25px 100px;
-  align-self: flex-end;
+  justify-self: flex-end;
   max-height: 10px;
   align-items: center;
 }
 
 .cards__item__text {
+  display: flex;
   color: #252e48;
   font-size: 18px;
   line-height: 24px;
@@ -121,6 +129,16 @@ h1{
   color: #323b578c;
   font-size: 15px;
   line-height: 24px;
+  display: flex;
+}
+
+.extra__info {
+  background-color: #cedaff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin: -0.5rem 1rem 0rem;
+  position: relative;
+  z-index: 10;
 }
 
 @media only screen and (min-width: 1200px) {
