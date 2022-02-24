@@ -5,15 +5,11 @@ import Oglasi from './data/Oglasi.json';
 
 function Cards() {
 
-  var showExtra = true
-
   function setExtra(i) {
-    if(showExtra)
+    if(document.getElementById(i).style.display !== 'flex')
       document.getElementById(i).style.display = 'block';
     else
       document.getElementById(i).style.display = 'none';
-
-    showExtra = !showExtra;
   } 
 
   return (

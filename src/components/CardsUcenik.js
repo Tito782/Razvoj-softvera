@@ -5,16 +5,13 @@ import Oglasi from './data/Oglasi.json';
 
 function Cards() {
 
-  var showExtra = true;
   var isClicked = false;
 
   function setExtra(i) {
-    if(showExtra)
+    if(document.getElementById(i).style.display !== 'flex')
       document.getElementById(i).style.display = 'flex';
     else
       document.getElementById(i).style.display = 'none';
-
-    showExtra = !showExtra;
   } 
 
   function ClickButton(key) {
