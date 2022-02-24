@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
 import Button from "@mui/material/Button";
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -8,10 +7,10 @@ import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOpenIcon from '@material-ui/icons/LockOpen';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import "./SignIn.css";
 
 function Copyright(props) {
   window.scrollTo(0, 0);
@@ -35,7 +34,7 @@ export default function SignIn() {
     event.preventDefault();
 
     const data = new FormData(event.currentTarget);
-    if(data.get('email').split('@')[1] == 'skole.hr'){
+    if(data.get('email').split('@')[1] === 'skole.hr'){
       window.location.href= '/prijava-aaiedu';
     }
     else
@@ -56,11 +55,8 @@ export default function SignIn() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOpenIcon />
-          </Avatar>
           <Typography component="h1" variant="h5">
-            Prijava za Poslodavce
+            <img  className= "image-e-gradani" src = "/images/E-gradani.png" width = "50px" height = "50px" alt = ""></img>   e-Građani
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
