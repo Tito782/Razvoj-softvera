@@ -56,7 +56,7 @@ export default function SignIn() {
           }}
         >
           <Typography component="h1" variant="h5">
-            <img  className= "image-e-gradani" src = "/images/E-gradani.png" width = "50px" height = "50px" alt = ""></img>   e-Građani
+            <img  className= "image-e-gradani" src = "/images/E-gradani.png" width = "50px" height = "50px" alt = ""></img> e-Građani
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
