@@ -7,7 +7,11 @@
                 "e-mail":"t.hrv@gmail.com",
                 "Rodenje":"2/12/2003",
                 "Skola":"Strukovna škola Vice Vlatkovića, Zadar",
-                "Smjer":"Drvodjelni Tehničar"
+                "Smjer":"Drvodjelni Tehničar",
+                "mob":"091 234 5678",
+                "adresa":"Put Tomislava 36, Zadar",
+                "zip":"23000",
+                "zupanija":"Zadarska županija"
             },
             {
                 "ime":"Mate",
@@ -15,7 +19,11 @@
                 "e-mail":"mmk@gmail.com",
                 "Rodenje":"1/1/2004",
                 "Skola":"Strukovna škola Vice Vlatkovića, Zadar",
-                "Smjer":"Drvodjelni Tehničar"
+                "Smjer":"Drvodjelni Tehničar",
+                "mob":"091 234 5678",
+                "adresa":"Put Tomislava 35, Zadar",
+                "zip":"23000",
+                "zupanija":"Šibensko-kninska županija"
             }
         ],
         "poslodavci": [
@@ -25,7 +33,11 @@
                 "e-mail":"david.vukosa@strabag.hr",
                 "Rodenje":"3/4/1976",
                 "Kompanija":"Strabag d.o.o",
-                "Titula":"mag. ing. Građevine"
+                "Titula":"mag. ing. Građevine",
+                "mob":"091 234 5678",
+                "adresa":"Put Tomislava 36, Zadar",
+                "zip":"23000",
+                "zupanija":"Zadarska županija"
             },
             {
                 "ime":"",
@@ -33,7 +45,11 @@
                 "e-mail":"josip.josipcevic@strabag.hr",
                 "Rodenje":"15/7/1988",
                 "Kompanija":"Softver d.o.o",
-                "Titula":"dipl. ing. comp."
+                "Titula":"dipl. ing. comp.",
+                "mob":"091 234 5678",
+                "adresa":"Put Tomislava 36, Zadar",
+                "zip":"23000",
+                "zupanija":"Zadarska županija"
             }
         ]
 }
