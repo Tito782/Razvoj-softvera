@@ -7,7 +7,7 @@ import ONama from './components/pages/ONama';
 import Prijava from './components/pages/Prijava';
 import UcenikPrijava from './components/pages/AAIEDU';
 import Ucenik from './components/pages/Ucenik';
-import Poslodavac from './components/pages/Poslodavac';
+//import Poslodavac from './components/pages/Poslodavac';
 import PosloviUcenik from './components/pages/PosloviUcenik';
 import PosloviPoslodavac from './components/pages/PosloviPoslodavac';
 
