@@ -9,6 +9,9 @@ import UcenikPrijava from './components/pages/AAIEDU';
 import Ucenik from './components/pages/Ucenik';
 import Poslodavac from './components/pages/Poslodavac';
 
+import PosloviP from './components/pages/PosloviPoslodavac';
+import PosloviU from './components/pages/PosloviUcenik';
+
 
 function App() {
   return (
@@ -22,6 +25,8 @@ function App() {
             <Route path='/prijava-aaiedu' element={<UcenikPrijava/>}></Route>  
             <Route path="/ucenik" element={<Ucenik/>}></Route>
             <Route path='/poslodavac' element={<Poslodavac/>}></Route>
+            <Route path='/poslovi-p' element={<PosloviP/>}></Route>
+            <Route path='/poslovi-u' element={<PosloviU/>}></Route>
           </Routes>
         </Router>
       </>

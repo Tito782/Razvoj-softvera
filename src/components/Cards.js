@@ -7,7 +7,7 @@ function Cards() {
 
   function setExtra(i) {
     if(document.getElementById(i).style.display !== 'flex')
-      document.getElementById(i).style.display = 'block';
+      document.getElementById(i).style.display = 'flex';
     else
       document.getElementById(i).style.display = 'none';
   } 
