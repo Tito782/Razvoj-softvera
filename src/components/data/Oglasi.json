@@ -4,18 +4,22 @@
         "autor":"Hoteli d.d.",
         "ponuda":"4500 HRK/mj",
         "grad":"Zadar",
-        "Opis":"Traži se osoba da bude dio Falkensteinr Obitelji :)",
+        "Opis":"Traži se osoba da bude dio Hoteli d.d. Obitelji :)",
         "Pozicije":"7",
-        "Vrsta":"Hoteljerstvo-i-ugostiteljstvo"
+        "Vrsta":"Hoteljerstvo-i-ugostiteljstvo",
+        "Slika":"images/konobar.jpg",
+        "key":"1"
     },
     {
         "naslov":"Pomoćni konobar",
-        "autor":"Grupa Zagreb d.d.",
+        "autor":"Hoteli d.d.",
         "ponuda":"4500 HRK/mj",
         "grad":"Zadar",
         "Opis":"Traži se osoba... ",
         "Pozicije":"5",
-        "Vrsta":"Hoteljerstvo-i-ugostiteljstvo"
+        "Vrsta":"Hoteljerstvo-i-ugostiteljstvo",
+        "Slika":"images/konobar.jpg",
+        "key":"2"
     },
     {
         "naslov":"Pomoćni kuhar",
@@ -24,7 +28,9 @@
         "grad":"Zadar",
         "Opis":"Traži se osoba... ",
         "Pozicije":"3",
-        "Vrsta":"Hoteljerstvo-i-ugostiteljstvo"
+        "Vrsta":"Hoteljerstvo-i-ugostiteljstvo",
+        "Slika":"images/konobar.jpg",
+        "key":"3"
     },
     {
         "naslov":"Privremeni električar",
@@ -33,7 +39,9 @@
         "grad":"Zadar",
         "Opis":"Traži se osoba... ",
         "Pozicije":"1",
-        "Vrsta":"Elektrotehnika"
+        "Vrsta":"Elektrotehnika",
+        "Slika":"images/mehanicar.jpg",
+        "key":"4"
     },
     {
         "naslov":"Pomoćni cvjećar",
@@ -42,7 +50,9 @@
         "grad":"Split",
         "Opis":"Traži se osoba... ",
         "Pozicije":"2",
-        "Vrsta":"Cvjećarstvo"
+        "Vrsta":"Cvjećarstvo",
+        "Slika":"images/bakmaz.jpg",
+        "key":"5"
     },
     {
         "naslov":"Vodoinstalater",
@@ -51,7 +61,9 @@
         "grad":"Zagreb",
         "Opis":"Traži se osoba... ",
         "Pozicije":"1",
-        "Vrsta":"Vodoinstalacije"
+        "Vrsta":"Vodoinstalacije",
+        "Slika":"images/mehanicar.jpg",
+        "key":"6"
     },
     {
         "naslov":"Junior Web stack developer",
@@ -60,6 +72,8 @@
         "grad":"Zagreb/Rijeka/Split",
         "Opis":"Traži se osoba... ",
         "Pozicije":"4",
-        "Vrsta":"IT"
+        "Vrsta":"IT",
+        "Slika":"images/programer.jpg",
+        "key":"7"
     }
 ]

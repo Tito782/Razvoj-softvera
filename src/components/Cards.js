@@ -1,47 +1,43 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import Oglasi from './data/Oglasi.json';
 
 function Cards() {
+
+  var showExtra = true
+
+  function setExtra(i) {
+    if(showExtra)
+      document.getElementById(i).style.display = 'block';
+    else
+      document.getElementById(i).style.display = 'none';
+
+    showExtra = !showExtra;
+  } 
+
   return (
     <div className='cards'>
-      <span className='animation'>&#187;</span>
-      <h1 className='centriraj'>Pronađite savršen posao za sebe!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-            <CardItem
-              src='images/mehanicar.jpg'
-              text='Mehaničar/ka'
-              label='Struka'
-              path='/poslovi'
-            />
-            <CardItem
-              src='images/konobar.jpg'
-              text='Konobar/ica'
-              label='Struka'
-              path='/poslovi'
-            />
-          </ul>
-          <ul className='cards__items'>
-            <CardItem
-              src='images/programer.jpg'
-              text='Programer/ka'
-              label='Struka'
-              path='/'
-            />
-            <CardItem
-              src='images/bakmaz.jpg'
-              text='Prodavač/ica'
-              label='Struka'
-              path='/prijava'
-            />
-            <CardItem
-              src='images/pitur.jpg'
-              text='Soboslikar/ica'
-              label='Struka'
-              path='/prijava'
-            />
+            {Oglasi.map(element => {
+              return (<div onClick={() => setExtra(element.key)}>
+                <CardItem 
+                  key = {element.key}
+                  src={element.Slika}
+                  text= {element.naslov}
+                  label='Struka'
+                  path='/poslovi'
+                  pozicije = {element.Pozicije}
+                  grad = {element.grad}
+                  autor = {element.autor}>
+                </CardItem>
+                <div className='extra__info' id={`${element.key}`} style={{display:'none'}}>
+                  <div className='tekst opis'>{element.Opis}</div>
+                </div>
+              </div>);
+            })}
           </ul>
         </div>
       </div>
