@@ -1,9 +1,12 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './Cards.css';
 import CardItem from './CardItem';
 import Oglasi from './data/Oglasi.json';
 
 function Cards() {
+
+  var Oglasi_cache = Oglasi;
 
   function setExtra(i) {
     if(document.getElementById(i).style.display !== 'flex')
@@ -20,11 +23,47 @@ function Cards() {
     document.getElementById('QuickAddMenu').style.display = 'none';
   }
 
+  function CombineAction() {
+    ClickButtonOff();
+    
+    document.getElementById('new_card').style.display = 'flex';
+  }
+
   return (
     <div className='cards'>
       <div id='QuickAddMenu' style={{'display':'none'}}>
           <div className='QA_container'>
-            <button onClick={ClickButtonOff}>rtt</button>
+            <form>
+              <label for="fname">Naslov:</label>
+              <input type="text" id="fname" name="fname"/><br/><br/>
+              <label for="lname">Ponuda (HRK/mj):</label>
+              <input type="number" id="lname" name="lname"/><br/><br/>
+              <label for="lname">Opis:</label>
+              <input type="text" id="lname" name="lname"/><br/><br/>
+              <label for="lname">Grad:</label>
+              <select className='qa_botuni' id='i'>
+                <option value='dogo'>Gradovi..</option>
+                <option value='dogo'>Zagreb</option>
+                <option value='dogo'>Zadar</option>
+                <option value='dogo'>Split</option>
+                <option value='dogo'>Rijeka</option>
+                <option value='dogo'>Pula</option>
+              </select><br/><br/>
+              <label for="lname">Sektor:</label>
+              <select className='qa_botuni' id='s'>
+                <option value='dogo'>Sektor..</option>
+                <option value='dogo'>Hoteljerstvo-i-ugostiteljstvo</option>
+                <option value='dogo'>Elektrotehnika</option>
+                <option value='dogo'>Cvjećarstvo</option>
+                <option value='dogo'>Vodoinstalacije</option>
+                <option value='dogo'>IT</option>
+              </select><br/><br/>
+              <label for="lname">Slika:</label>
+              <input type="text" id="lname" name="lname" value={Oglasi_cache[1].Slika}/><br/><br/>
+              <label for="lname">Zapošljavanje:</label>
+              <input type="number" id="lname" name="lname"/><br/><br/><br/>
+            </form>
+            <button onClick={CombineAction}>Save</button>
           </div>
         </div>
       <div className='quickadd_bar'>
@@ -59,7 +98,7 @@ function Cards() {
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-            {Oglasi.map(element => {
+            {Oglasi_cache.map(element => {
               return (<div><div onClick={() => setExtra(element.key)}>
                 <CardItem
                   key = {element.key}
@@ -79,6 +118,25 @@ function Cards() {
                 </div>
               </div>);
             })}
+            <div id='new_card' style={{'display' : 'none'}}>
+              <div onClick={() => setExtra(100)}>
+                <CardItem
+                  key = '100'
+                  src={'../images/konobar.jpg'}
+                  text= 'naslov'
+                  label='Struka'
+                  path='/poslovi/poslodavac'
+                  pozicije = 'poz'
+                  grad = 'Zadar'
+                  autor = 'Mirok d.d'>
+                </CardItem>
+                </div>
+                <div className='extra__info' id='100' style={{display:'none'}}>
+                  <div className='tekst opis'>Opis</div>
+                  <div className='tekst vrsta'> Ponuda: N/A</div>
+                  <div className='tekst vrsta'> Sektor: N/A</div>
+                </div>
+            </div>
           </ul>
         </div>
       </div>
