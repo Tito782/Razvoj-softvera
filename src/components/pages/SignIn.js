@@ -12,6 +12,7 @@ import LockOpenIcon from '@material-ui/icons/LockOpen';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import "./SignIn.css";
 
 function Copyright(props) {
   window.scrollTo(0, 0);
@@ -56,11 +57,8 @@ export default function SignIn() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOpenIcon />
-          </Avatar>
           <Typography component="h1" variant="h5">
-            Prijava za Poslodavce
+            <img  className= "image-e-gradani" src = "/images/E-gradani.png" width = "50px" height = "50px"></img>   e-Građani
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
