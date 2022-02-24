@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Cards.css';
 import CardItem from './CardItem';
 import Oglasi from './data/Oglasi.json';
