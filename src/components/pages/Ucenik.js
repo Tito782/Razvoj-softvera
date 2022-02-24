@@ -1,13 +1,13 @@
 import React from "react";
 import "./Ucenik.css";
-import bootstrap from "bootstrap";
+import 'bootstrap/dist/css/bootstrap.css';
 
 function Ucenik(){
     
     window.scrollTo(0,0);
     
     return(
-
+            
         <>
         <div class="container rounded bg-white mt-5 mb-5">
     <div class="row">
