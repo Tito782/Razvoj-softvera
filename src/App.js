@@ -7,9 +7,8 @@ import ONama from './components/pages/ONama';
 import Prijava from './components/pages/Prijava';
 import UcenikPrijava from './components/pages/AAIEDU';
 import Ucenik from './components/pages/Ucenik';
-//import Poslodavac from './components/pages/Poslodavac';
-import PosloviUcenik from './components/pages/PosloviUcenik';
-import PosloviPoslodavac from './components/pages/PosloviPoslodavac';
+import Poslodavac from './components/pages/Poslodavac';
+
 
 function App() {
   return (
@@ -19,12 +18,10 @@ function App() {
             <Route exact path='/' element={<Pocetna/>}></Route>
             <Route path='/o-nama' element={<ONama/>}/>
             <Route path='/poslovi' element={<Poslovi/>}></Route>
-            <Route path='/poslovi/ucenik' element={<PosloviUcenik/>}></Route>
-            <Route path='/poslovi/poslodavac' element={<PosloviPoslodavac/>}></Route>
             <Route path='/prijava' element={<Prijava/>}></Route>      
-            <Route path='/prijava/aaiedu' element={<UcenikPrijava/>}></Route>  
+            <Route path='/prijava-aaiedu' element={<UcenikPrijava/>}></Route>  
             <Route path="/ucenik" element={<Ucenik/>}></Route>
-            <Route path='/poslodavac' element={<ONama/>}></Route>
+            <Route path='/poslodavac' element={<Poslodavac/>}></Route>
           </Routes>
         </Router>
       </>
