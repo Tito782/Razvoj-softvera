@@ -9,7 +9,7 @@ function UcenikPrijava() {
 					<p class="entryText">Autentikacijska i autorizacijska infrastruktura znanosti i visokog obrazovanja u Republici Hrvatskoj</p>
 				</div>
 				<div class="error">
-<input type="hidden" name="AuthState" value="_9d0ab3f6310b6109aa68afcf218e4bbe81fa7cdfb7:https://login.aaiedu.hr/sso/saml2/idp/SSOService.php?spentityid=office365.skole.hr&amp;RelayState=https%3A%2F%2Foffice365.skole.hr%2Fdefault%2Fauthorized&amp;cookieTime=1644172085"/>				</div>
+<input type="hidden" name="AuthState" value=""/>				</div>
 				<div class="input-box" title="Upišite korisničku oznaku svog e-identiteta iz sustava AAI@EduHr">
 					<label for="username" aria-label="Upišite korisničku oznaku svog e-identiteta iz sustava AAI@EduHr" title="Upišite korisničku oznaku svog e-identiteta iz sustava AAI@EduHr">KORISNIČKA OZNAKA </label>
 					<input id="username" name="username" aria-label="Upišite korisničku oznaku svog e-identiteta iz sustava AAI@EduHr" title="Upišite korisničku oznaku svog e-identiteta iz sustava AAI@EduHr" tabindex="1"/>
