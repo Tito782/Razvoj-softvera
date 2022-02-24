@@ -41,7 +41,7 @@ function Cards() {
                   src={'../' + element.Slika}
                   text= {element.naslov}
                   label='Struka'
-                  path='/poslovi/ucenik'
+                  path='/poslovi-u'
                   pozicije = {element.Pozicije}
                   grad = {element.grad}
                   autor = {element.autor}>

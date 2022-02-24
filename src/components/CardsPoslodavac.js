@@ -104,7 +104,7 @@ function Cards() {
                   src={'../' + element.Slika}
                   text= {element.naslov}
                   label='Struka'
-                  path='/poslovi/poslodavac'
+                  path='/poslovi-p'
                   pozicije = {element.Pozicije}
                   grad = {element.grad}
                   autor = {element.autor}>
@@ -124,7 +124,7 @@ function Cards() {
                   src={'../images/konobar.jpg'}
                   text= 'naslov'
                   label='Struka'
-                  path='/poslovi/poslodavac'
+                  path='/poslovi-p'
                   pozicije = 'poz'
                   grad = 'Zadar'
                   autor = 'Mirok d.d'>
