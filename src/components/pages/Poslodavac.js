@@ -6,7 +6,7 @@ import Profile from "../data/profiles.json"
 
 function Poslodavac(){
     let idx = localStorage.getItem('prof_index')
-    let user = Profile.ucenici[idx];
+    let user = Profile.poslodavci[idx];
     window.scrollTo(0,0);
     
     return(      
