@@ -5,8 +5,8 @@ import "./Ucenik.css";
 import Profile from "../data/profiles.json"
 
 function Ucenik(){
-    
-    let user = Profile.ucenici[0];
+    let idx = localStorage.getItem('prof_index')
+    let user = Profile.ucenici[idx];
     window.scrollTo(0,0);
     
     return(      

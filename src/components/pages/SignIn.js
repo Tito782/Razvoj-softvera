@@ -11,6 +11,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import "./SignIn.css";
+import Profile from '../data/profiles.json'
 
 function Copyright(props) {
   window.scrollTo(0, 0);
@@ -37,8 +38,17 @@ export default function SignIn() {
     if(data.get('email').split('@')[1] === 'skole.hr'){
       window.location.href= '/prijava-aaiedu';
     }
-    else
-      window.location.href="/poslodavac";
+    else {
+      let i = 0
+      Profile.poslodavci.forEach(element => {
+        if(element['e-mail'] === data.get('email')){
+          localStorage.setItem('prof_index', `${i}`);
+          localStorage.setItem('prof_type', 'p')
+          window.location.href= '/poslodavac';
+        }
+        i++;
+      })
+    }
 
   };
 
