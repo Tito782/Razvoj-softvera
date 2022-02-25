@@ -8,9 +8,8 @@ import Prijava from './components/pages/Prijava';
 import UcenikPrijava from './components/pages/AAIEDU';
 import Ucenik from './components/pages/Ucenik';
 import Poslodavac from './components/pages/Poslodavac';
-
 import PosloviP from './components/pages/PosloviPoslodavac';
-import PosloviU from './components/pages/PosloviUcenik';
+import PosloviU from './components/pages/PosloviUcenik'; 
 
 
 function App() {

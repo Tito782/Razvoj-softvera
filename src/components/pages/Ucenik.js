@@ -75,7 +75,9 @@ function Ucenik(){
                     </div>
                 </div>
                 <div class="col-md-4">
-
+                    <div>
+                        <h1>Hy</h1>
+                    </div>
                 </div>
             </div>
         </div>
