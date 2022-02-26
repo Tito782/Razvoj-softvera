@@ -4,10 +4,11 @@ import Profile from '../data/profiles.json';
 
 function submitForm() {
 	let username = document.getElementById('username').value;
+	let password = document.getElementById('password').value;
 	let i = 0;
 
 	Profile.ucenici.forEach(element => {
-		if(element['e-mail'] === username) {
+		if(element['e-mail'] === username && element['sifra'] === password) {
 			localStorage.setItem('prof_index', `${i}`);
           	localStorage.setItem('prof_type', 'u')
           	window.location.href= '/ucenik';
@@ -15,7 +16,7 @@ function submitForm() {
 		i++;
 	})
 
-	document.getElementById('error').innerHTML = "neispravna lozinka ili korisničko ime"
+	document.getElementById('error').innerHTML = "neispravno korisničko ime ili lozinka"
 }
 
 function UcenikPrijava() {
