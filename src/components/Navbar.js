@@ -31,7 +31,7 @@ function Navbar() {
   <>
         <nav className = "navbar">
             <div className="navbar-container">
-                <Link to="/" className = "navbar-logo" onClick={closeMobileMenu}>UčeničkiWebServis<i className="fab fa-typo3"></i></Link>
+                <Link to="/" className = "navbar-logo" onClick={closeMobileMenu}>UčeničkiWebServis<img className='fab' src='TeamPlace_invert.png' alt='-' style={{'width':'25%'}}/></Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars' } />
                 </div>
