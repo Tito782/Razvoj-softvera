@@ -15,16 +15,17 @@
                 "zupanija":"Zadarska županija"
             },
             {
-                "ime":"Mate",
-                "prezime":"Mišokovač",
-                "e-mail":"m.m@skole.hr",
-                "Rodenje":"1/1/2004",
+                "ime":"Leo",
+                "prezime":"Sikirić",
+                "e-mail":"leo.sikiric@skole.hr",
+                "sifra":"siki123",
+                "Rodenje":"1/8/2003",
                 "Skola":"Strukovna škola Vice Vlatkovića, Zadar",
-                "Smjer":"Drvodjelni Tehničar",
+                "Smjer":"Tehničar za računalstvo",
                 "mob":"091 234 5678",
                 "adresa":"Put Tomislava 35, Zadar",
                 "zip":"23000",
-                "zupanija":"Šibensko-kninska županija"
+                "zupanija":"Zadarska županija"
             }
         ],
         "poslodavci": [
