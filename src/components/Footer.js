@@ -55,7 +55,7 @@ function Footer() {
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
               UcenickiWebServis
-              <i class='fab fa-typo3' />
+              <img src='TeamPlace_invert.png' alt="-"/>
             </Link>
           </div>
           <small class='website-rights'>UcenickiWebServis ©2022</small>
