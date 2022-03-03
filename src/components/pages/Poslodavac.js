@@ -70,9 +70,6 @@ function Poslodavac(){
                         <div class="row mt-3">
                             <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="Hrvatska" value=""/></div>
                             <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value={user.zupanija} placeholder="županija"/></div>
-                        </div>
-                        <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
-                    </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-3 py-5">
