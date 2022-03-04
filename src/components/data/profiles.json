@@ -2,6 +2,7 @@
     "ucenici":
         [
             {
+                "id":"1",
                 "ime":"Tomislav",
                 "prezime":"Hrvatina",
                 "e-mail":"t.h@skole.hr",
@@ -15,6 +16,7 @@
                 "zupanija":"Zadarska županija"
             },
             {
+                "id":"2",
                 "ime":"Leo",
                 "prezime":"Sikirić",
                 "e-mail":"leo.sikiric@skole.hr",
@@ -30,6 +32,7 @@
         ],
         "poslodavci": [
             {
+                "id":"3",
                 "ime":"David",
                 "prezime":"Vukoša",
                 "e-mail":"david.vukosa@strabag.hr",
@@ -38,19 +41,51 @@
                 "Kompanija":"Strabag d.o.o",
                 "Titula":"mag. ing. Građevine",
                 "mob":"091 234 5678",
-                "adresa":"Put Tomislava 36, Zadar",
+                "adresa":"Ulica , Zadar",
                 "zip":"23000",
                 "zupanija":"Zadarska županija"
             },
             {
+                "id":"4",
                 "ime":"Josip",
                 "prezime":"Josipčević",
-                "e-mail":"josip.josipcevic@strabag.hr",
+                "e-mail":"josip.josipcevic@auto.hr",
+                "sifra":"12354",
+                "Rodenje":"15/7/1988",
+                "Kompanija":"Auto-hr d.o.o",
+                "Titula":"dipl. ing. el.",
+                "mob":"091 234 5678",
+                "adresa":"Put Tomislava 36a, Zadar",
+                "zip":"23000",
+                "zupanija":"Zadarska županija"
+            }
+            ,
+            {
+                "id":"5",
+                "ime":"Šime",
+                "prezime":"Starčević",
+                "e-mail":"sime.stc@soft-ver.hr",
+                "sifra":"12354",
                 "Rodenje":"15/7/1988",
                 "Kompanija":"Softver d.o.o",
                 "Titula":"dipl. ing. comp.",
                 "mob":"091 234 5678",
-                "adresa":"Put Tomislava 36, Zadar",
+                "adresa":"Put Tomislava 36b, Zadar",
+                "zip":"23000",
+                "zupanija":"Zadarska županija"
+            }
+            ,
+            {
+                "id":"6",
+                "ime":"Marko",
+                "prezime":"Stipkovač",
+                "e-mail":"marko.stipkovac@vodoradnja.hr",
+                "sifra":"12354",
+                "Rodenje":"15/7/1988",
+                "Kompanija":"Vodoinstalacije d.o.o",
+                "Titula":"dipl. ing. meh.",
+                "mob":"091 234 5678",
+                "adresa":"Put Tomislava 36c, Zadar",
                 "zip":"23000",
                 "zupanija":"Zadarska županija"
             }

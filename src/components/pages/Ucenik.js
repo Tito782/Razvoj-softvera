@@ -74,6 +74,18 @@ function Ucenik(){
                     </div>
                 </div>
                 <div class="col-md-4">
+                    <div class="p-3 py-5">
+                        <div className="title">Objavljeni poslovi</div> 
+                        <div className="title">Objavljeni poslovi</div> 
+                        <div className="title">Objavljeni poslovi</div> 
+                        <div className="title">Objavljeni poslovi</div> 
+                    </div>    
+                    <div class="p-3 py-5">
+                        <div className="title">Prijavljeni poslovi</div> 
+                        <div className="title">Prijavljeni poslovi</div> 
+                        <div className="title">Prijavljeni poslovi</div> 
+                        <div className="title">Prijavljeni poslovi</div> 
+                    </div>  
                 </div>
             </div>
         </div>
