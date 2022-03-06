@@ -11,12 +11,17 @@ function submitForm() {
 		if(element['e-mail'] === username && element['sifra'] === password) {
 			localStorage.setItem('prof_index', `${i}`);
           	localStorage.setItem('prof_type', 'u')
+			localStorage.setItem('profile_test', '1')
           	window.location.href= '/ucenik';
 		}
-		i++;
+		else{
+			i++;
+			document.getElementById('error').innerHTML = "neispravno korisničko ime ili lozinka";
+		}
+		
 	})
 
-	document.getElementById('error').innerHTML = "neispravno korisničko ime ili lozinka"
+	
 }
 
 function UcenikPrijava() {
