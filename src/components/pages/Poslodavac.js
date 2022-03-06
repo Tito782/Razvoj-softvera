@@ -12,7 +12,6 @@ import Poslovi from "../data/poslovi.json"
 //mui-icons
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import ClearIcon from '@mui/icons-material/Clear';
-import PaidIcon from '@mui/icons-material/Paid';
 import SendIcon from '@mui/icons-material/Send';
 import ErrorIcon from '@mui/icons-material/Error';
 import HourglassEmptyIcon from '@mui/icons-material/MoreHoriz';
@@ -25,7 +24,7 @@ function Poslodavac(){
     window.scrollTo(0,0);
 
     var autoPayButton = <button className="reg_button auto_pay"><AccessTimeIcon/></button>;
-    var paidButton = <button className="reg_button paid"><PaidIcon style={{"color":"white"}}/></button>
+    var paidButton = <button className="reg_button paid"><CheckIcon style={{"color":"white"}}/></button>
     var deniedButton = <button className="reg_button denied"><ClearIcon style={{"color":"white"}}/></button>
     var allowedButton = <button className="reg_button allowed"><SendIcon style={{"color":"white"}}/></button>
     var errorButton = <button className="reg_button error"><ErrorIcon/></button>
