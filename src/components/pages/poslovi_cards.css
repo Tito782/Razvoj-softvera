@@ -1,0 +1,72 @@
+.card_img {
+    max-height: 5.5rem;
+    margin-left: -15px;
+  }
+  
+  .poslovi_card {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    border: 0.15rem solid rgb(224, 224, 224);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 125%;
+    max-height: 92px;
+    max-width: 470px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.017));
+  }
+  .info_cont {
+    margin: 9px;
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .button_cont {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+  }
+  
+  .reg_button {
+      border: 0;
+      border-radius: 15px;
+      height: 2.5rem;
+      width: 2.5rem;
+  }
+
+  .auto_pay {
+      background-color: gray;
+  }
+
+  .paid {
+      background-color: rgb(53, 204, 53);
+  }
+
+  .denied {
+    background-color: rgb(206, 50, 50);
+  }
+
+  .waiting {
+      background-color: gray;
+  }
+
+  .error {
+      background-color: rgb(218, 218, 9);
+  }
+
+  .allowed {
+      background-color: rgb(108, 141, 170);
+  }
+
+.poslodavac_ime {
+    color: rgb(41, 41, 41);
+}
+
+.email {
+    color: rgb(77, 77, 77);
+    font-size: small;
+}

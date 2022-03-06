@@ -2,7 +2,9 @@ import React from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "./Poslodavac.css";
+//data
 import Profile from "../data/profiles.json"
+//import Poslovi from "../data/poslovi.json"
 
 function Poslodavac(){
     let idx = localStorage.getItem('prof_index')
@@ -75,10 +77,17 @@ function Poslodavac(){
                 </div>
                 <div class="col-md-4">
                     <div class="p-3 py-5">
-                        <div className="title">Objavljeni poslovi</div> 
-                        <div className="title">Objavljeni poslovi</div> 
-                        <div className="title">Objavljeni poslovi</div> 
-                        <div className="title">Objavljeni poslovi</div> 
+                        <div className="poslovi_card ">
+                            <img className="card_img" src="images/mehanicar.jpg" alt="Slika"></img>
+                            <div className="info_cont">
+                                <p>Naslov</p>
+                                <p>Poslodavac</p>
+                            </div>
+                            <div className="info_cont">
+                                <label>Plaća</label>
+                                <button>Pošalji zahtjev</button>
+                            </div>
+                        </div>
                     </div>    
                     <div class="p-3 py-5">
                         <div className="title">Prijavljeni poslovi</div> 

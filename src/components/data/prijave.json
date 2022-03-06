@@ -49,22 +49,5 @@
         "plaća":"5000 kn/mj",
         "status": "2",
         "slika":"images/mehanicar.jpg"
-    },
-    {
-        "id":"3",
-        "naslov":"Automehaničar",
-        "poslodavac": {
-            "id":"4",
-            "ime":"Josip Josipčević",
-            "e-mail":"josip.josipcevic@auto.hr"
-        },
-        "ucenik": {
-            "id":"1",
-            "ime":"Tomislav Hrvatina",
-            "e-mail":"t.h@skole.hr"
-        },
-        "plaća":"5000 kn/mj",
-        "status": "4",
-        "slika":"images/mehanicar.jpg"
     }
 ]

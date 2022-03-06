@@ -1,14 +1,71 @@
 import React from "react";
+import reactDom from "react-dom";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "./Ucenik.css";
+import "./poslovi_cards.css"
+//data
 import Profile from "../data/profiles.json"
+import Poslovi from "../data/poslovi.json"
+import Prijave from "../data/prijave.json"
+
+//mui-icons
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import ClearIcon from '@mui/icons-material/Clear';
+import PaidIcon from '@mui/icons-material/Paid';
+import SendIcon from '@mui/icons-material/Send';
+import ErrorIcon from '@mui/icons-material/Error';
+import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty';
+import CheckIcon from '@mui/icons-material/Check';
+import PendingIcon from '@mui/icons-material/Pending';
 
 function Ucenik(){
     let idx = localStorage.getItem('prof_index')
     let user = Profile.ucenici[idx];
     window.scrollTo(0,0);
     
+    var autoPayButton = <button className="reg_button auto_pay"><AccessTimeIcon/></button>;
+    var paidButton = <button className="reg_button paid"><PaidIcon style={{"color":"white"}}/></button>
+    var deniedButton = <button className="reg_button denied"><ClearIcon style={{"color":"white"}}/></button>
+    var allowedButton = <button onClick={TurnToWait} className="reg_button allowed"><SendIcon style={{"color":"white"}}/></button>
+    var errorButton = <button className="reg_button error"><ErrorIcon/></button>
+    var waitingButton = <button className="reg_button waiting"><HourglassEmptyIcon style={{"color":"white"}}/></button>
+
+    var AcceptButton = <button className="reg_button paid"><CheckIcon style={{"color":"white"}}/></button>;
+    var waitButton = <button className="reg_button waiting"><PendingIcon style={{"color":"white"}}/></button>
+
+    function TurnToWait() {
+        reactDom.render(waitingButton, document.getElementById('button_3'))
+    }
+
+    function SwitchCase (props) {
+        switch(props.value) {
+            case "0": 
+                return autoPayButton;
+            case "1":
+                return paidButton;
+            case "2": 
+                return deniedButton;
+            case "3":
+                return waitingButton;
+            case "4":
+                return allowedButton;
+            default:
+                return errorButton;
+        }
+    }
+
+    function SwitchCasePrijave (props) {
+        switch(props.value) {
+            case "0": 
+                return AcceptButton;
+            case "1":
+                return deniedButton;
+            default:
+                return waitButton;
+        }
+    }
+
     return(      
         <>
         <Navbar/>
@@ -75,16 +132,42 @@ function Ucenik(){
                 </div>
                 <div class="col-md-4">
                     <div class="p-3 py-5">
-                        <div className="title">Objavljeni poslovi</div> 
-                        <div className="title">Objavljeni poslovi</div> 
-                        <div className="title">Objavljeni poslovi</div> 
-                        <div className="title">Objavljeni poslovi</div> 
+                        <h2 style={{"padding-left":"16px"}}>Trenutni poslovi</h2>
+                        {Poslovi.map(element => {
+                            if(element.ucenik.id === user.id){
+                               return(<div className="poslovi_card" key={element.id}>
+                                <img className="card_img" src={element.slika} alt="Slika"></img>
+                                <div className="info_cont">
+                                    <h3>{element.naslov}</h3>
+                                    <p className="poslodavac_ime">{element.poslodavac.ime}</p>
+                                    <p className="email">{element.poslodavac["e-mail"]}</p>
+                                </div>
+                                <div id={"button_" + element.id} className="button_cont">
+                                    <SwitchCase value={element.status} id={element.id}></SwitchCase>
+                                </div>
+                            </div>); 
+                            }
+                            
+                        })
+                        }
                     </div>    
                     <div class="p-3 py-5">
-                        <div className="title">Prijavljeni poslovi</div> 
-                        <div className="title">Prijavljeni poslovi</div> 
-                        <div className="title">Prijavljeni poslovi</div> 
-                        <div className="title">Prijavljeni poslovi</div> 
+                    <h2 style={{"padding-left":"16px"}}>Trenutni poslovi</h2>
+                        {Prijave.map(element => {
+                            if(element.ucenik.id === user.id){
+                               return(<div className="poslovi_card" key={element.id}>
+                                <img className="card_img" src={element.slika} alt="Slika"></img>
+                                <div className="info_cont">
+                                    <h3>{element.naslov}</h3>
+                                    <p className="poslodavac_ime">{element.poslodavac.ime}</p>
+                                    <p className="email">{element.poslodavac["e-mail"]}</p>
+                                </div>
+                                <div id={"button_" + element.id} className="button_cont">
+                                    <SwitchCasePrijave value={element.status}></SwitchCasePrijave>
+                                </div>
+                            </div>); 
+                            }})
+                        }
                     </div>  
                 </div>
             </div>
