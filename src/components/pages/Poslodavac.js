@@ -1,15 +1,68 @@
 import React from "react";
+import reactDom from "react-dom";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "./Poslodavac.css";
+import "./poslovi_cards.css"
+
 //data
 import Profile from "../data/profiles.json"
-//import Poslovi from "../data/poslovi.json"
+import Poslovi from "../data/poslovi.json"
+
+//mui-icons
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import ClearIcon from '@mui/icons-material/Clear';
+import PaidIcon from '@mui/icons-material/Paid';
+import SendIcon from '@mui/icons-material/Send';
+import ErrorIcon from '@mui/icons-material/Error';
+import HourglassEmptyIcon from '@mui/icons-material/MoreHoriz';
+import CheckIcon from '@mui/icons-material/Check';
+
 
 function Poslodavac(){
     let idx = localStorage.getItem('prof_index')
     let user = Profile.poslodavci[idx];
     window.scrollTo(0,0);
+
+    var autoPayButton = <button className="reg_button auto_pay"><AccessTimeIcon/></button>;
+    var paidButton = <button className="reg_button paid"><PaidIcon style={{"color":"white"}}/></button>
+    var deniedButton = <button className="reg_button denied"><ClearIcon style={{"color":"white"}}/></button>
+    var allowedButton = <button className="reg_button allowed"><SendIcon style={{"color":"white"}}/></button>
+    var errorButton = <button className="reg_button error"><ErrorIcon/></button>
+    var waitingButton = <button className="reg_button waiting"><HourglassEmptyIcon style={{"color":"white"}}/></button>
+    
+    function ChangeInnerHTML(e) {
+        let bjbutton = (<div>
+                <button onClick={ChangeToPaid} className="reg_button paid"><CheckIcon style={{"color":"white"}}/></button>
+                <button onClick={ChangeToDenied} className="reg_button denied"><ClearIcon style={{"color":"white"}}/></button>
+            </div>);
+        reactDom.render(bjbutton, e.target)
+    }
+
+    function ChangeToPaid(e) {
+        reactDom.render(paidButton, e.target.parentNode.parentNode)
+    }
+
+    function ChangeToDenied(e) {
+        reactDom.render(deniedButton, e.target.parentNode.parentNode)
+    }
+
+    function SwitchCase(props) {
+        switch(props.value) {
+            case "0": 
+                return autoPayButton;
+            case "1":
+                return paidButton;
+            case "2": 
+                return deniedButton;
+            case "3":
+                return waitingButton;
+            case "4":
+                return allowedButton;
+            default:
+                return errorButton;
+        }
+    }
     
     return(      
         <>
@@ -77,24 +130,24 @@ function Poslodavac(){
                 </div>
                 <div class="col-md-4">
                     <div class="p-3 py-5">
-                        <div className="poslovi_card ">
-                            <img className="card_img" src="images/mehanicar.jpg" alt="Slika"></img>
-                            <div className="info_cont">
-                                <p>Naslov</p>
-                                <p>Poslodavac</p>
-                            </div>
-                            <div className="info_cont">
-                                <label>Plaća</label>
-                                <button>Pošalji zahtjev</button>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="p-3 py-5">
-                        <div className="title">Prijavljeni poslovi</div> 
-                        <div className="title">Prijavljeni poslovi</div> 
-                        <div className="title">Prijavljeni poslovi</div> 
-                        <div className="title">Prijavljeni poslovi</div> 
-                    </div>  
+                        <h2 style={{"padding-left":"16px"}}>Poslovi</h2>
+                        {Poslovi.map(element => {
+                            if(element.poslodavac.id === user.id){
+                                return(<div className="poslovi_card" key={element.id}>
+                                    <img className="card_img" src={element.slika} alt="Slika"></img>
+                                    <div className="info_cont">
+                                        <h3>{element.naslov}</h3>
+                                        <p className="poslodavac_ime">{element.ucenik.ime}</p>
+                                        <p className="email">{element.ucenik["e-mail"]}</p>
+                                    </div>
+                                    <div id={"button_" + element.id} className="button_cont" onMouseEnter={element.status === "3" ? ChangeInnerHTML : ''}>
+                                        <SwitchCase value={element.status} id={element.id}></SwitchCase>
+                                    </div>
+                                </div>); 
+                            }
+                            return(<div></div>);
+                        })}
+                    </div>     
                 </div>
             </div>
         </div>

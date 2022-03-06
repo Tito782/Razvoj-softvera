@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "./Ucenik.css";
 import "./poslovi_cards.css"
+
 //data
 import Profile from "../data/profiles.json"
 import Poslovi from "../data/poslovi.json"
@@ -132,7 +133,7 @@ function Ucenik(){
                 </div>
                 <div class="col-md-4">
                     <div class="p-3 py-5">
-                        <h2 style={{"padding-left":"16px"}}>Trenutni poslovi</h2>
+                        <h2 style={{"padding-left":"16px"}}>Poslovi</h2>
                         {Poslovi.map(element => {
                             if(element.ucenik.id === user.id){
                                return(<div className="poslovi_card" key={element.id}>
@@ -147,27 +148,28 @@ function Ucenik(){
                                 </div>
                             </div>); 
                             }
-                            
+                            return(<div></div>)
                         })
                         }
                     </div>    
                     <div class="p-3 py-5">
-                    <h2 style={{"padding-left":"16px"}}>Trenutni poslovi</h2>
+                        <h2 style={{"padding-left":"16px"}}>Zahtjevi za poslove</h2>
                         {Prijave.map(element => {
                             if(element.ucenik.id === user.id){
-                               return(<div className="poslovi_card" key={element.id}>
-                                <img className="card_img" src={element.slika} alt="Slika"></img>
-                                <div className="info_cont">
-                                    <h3>{element.naslov}</h3>
-                                    <p className="poslodavac_ime">{element.poslodavac.ime}</p>
-                                    <p className="email">{element.poslodavac["e-mail"]}</p>
-                                </div>
-                                <div id={"button_" + element.id} className="button_cont">
-                                    <SwitchCasePrijave value={element.status}></SwitchCasePrijave>
-                                </div>
-                            </div>); 
-                            }})
-                        }
+                                return(<div className="poslovi_card" key={element.id}>
+                                    <img className="card_img" src={element.slika} alt="Slika"></img>
+                                    <div className="info_cont">
+                                        <h3>{element.naslov}</h3>
+                                        <p className="poslodavac_ime">{element.poslodavac.ime}</p>
+                                        <p className="email">{element.poslodavac["e-mail"]}</p>
+                                    </div>
+                                    <div id={"button_" + element.id} className="button_cont">
+                                        <SwitchCasePrijave value={element.status}></SwitchCasePrijave>
+                                    </div>
+                                </div> );
+                            }
+                            return(<div></div>)
+                        })}
                     </div>  
                 </div>
             </div>
