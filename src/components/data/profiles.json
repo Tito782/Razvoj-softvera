@@ -28,11 +28,26 @@
                 "adresa":"Put Tomislava 35, Zadar",
                 "zip":"23000",
                 "zupanija":"Zadarska županija"
+            },
+            {
+                "id":"3",
+                 "ime":"Vito",
+                "prezime":"Sincic",
+                "e-mail":"vito.sincic@skole.hr",
+                "sifra":"vitoto",
+                "Rodenje":"1/8/2003",
+                "Skola":"Strukovna škola Vice Vlatkovića, Zadar",
+                "Smjer":"Tehničar za računalstvo",
+                "mob":"091 234 5678",
+                "adresa":"Put Tomislava 35, Zadar",
+                "zip":"23000",
+                "zupanija":"Zadarska županija"
             }
+
         ],
         "poslodavci": [
             {
-                "id":"3",
+                "id":"4",
                 "ime":"David",
                 "prezime":"Vukoša",
                 "e-mail":"david.vukosa@strabag.hr",
@@ -46,7 +61,7 @@
                 "zupanija":"Zadarska županija"
             },
             {
-                "id":"4",
+                "id":"5",
                 "ime":"Josip",
                 "prezime":"Josipčević",
                 "e-mail":"josip.josipcevic@auto.hr",
@@ -61,14 +76,14 @@
             }
             ,
             {
-                "id":"5",
-                "ime":"Šime",
-                "prezime":"Starčević",
-                "e-mail":"sime.stc@soft-ver.hr",
-                "sifra":"12354",
+                "id":"6",
+                "ime":"Niko",
+                "prezime":"Poljicak",
+                "e-mail":"niko.poljicak@hts.hr",
+                "sifra":"nikica",
                 "Rodenje":"15/7/1988",
-                "Kompanija":"Softver d.o.o",
-                "Titula":"dipl. ing. comp.",
+                "Kompanija":"Suđenje d.o.o",
+                "Titula":"dipl. ing. suđenja.",
                 "mob":"091 234 5678",
                 "adresa":"Put Tomislava 36b, Zadar",
                 "zip":"23000",
@@ -76,7 +91,7 @@
             }
             ,
             {
-                "id":"6",
+                "id":"7",
                 "ime":"Marko",
                 "prezime":"Stipkovač",
                 "e-mail":"marko.stipkovac@vodoradnja.hr",

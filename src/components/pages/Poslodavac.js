@@ -113,12 +113,12 @@ function Poslodavac(){
                                 <input type="text" class="form-control" placeholder="enter email id" value={user["e-mail"]}/>
                             </div>
                             <div class="col-md-12">
-                                <label class="labels">School</label>
-                                <input type="text" class="form-control" placeholder="education" value={user.Skola}/>
+                                <label class="labels">Titula</label>
+                                <input type="text" class="form-control" placeholder="education" value={user.Titula}/>
                             </div>
                             <div class="col-md-12">
-                                <label class="labels">Smjer</label>
-                                <input type="text" class="form-control" placeholder="education" value={user.Smjer}/>
+                                <label class="labels">KOmpanija</label>
+                                <input type="text" class="form-control" placeholder="education" value={user.Kompanija}/>
                             </div>
                         </div>
                         <div class="row mt-3">

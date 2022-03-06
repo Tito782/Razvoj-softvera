@@ -41,9 +41,10 @@ export default function SignIn() {
     else {
       let i = 0
       Profile.poslodavci.forEach(element => {
-        if(element['e-mail'] === data.get('email')){
+        if(element['e-mail'] === data.get('email') && element['sifra'] === data.get('password')){
           localStorage.setItem('prof_index', `${i}`);
           localStorage.setItem('prof_type', 'p')
+          localStorage.setItem('profile_test', '2')
           window.location.href= '/poslodavac';
         }
         i++;
