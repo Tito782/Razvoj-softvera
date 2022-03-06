@@ -20,7 +20,7 @@
         "id":"1",
         "naslov":"Automehaničar",
         "poslodavac": {
-            "id":"4",
+            "id":"3",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },
@@ -37,7 +37,7 @@
         "id":"2",
         "naslov":"Automehaničar",
         "poslodavac": {
-            "id":"4",
+            "id":"3",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },
@@ -65,6 +65,23 @@
         },
         "plaća":"5000 kn/mj",
         "status": "4",
+        "slika":"images/mehanicar.jpg"
+    },
+    {
+        "id":"4",
+        "naslov":"Automehaničar",
+        "poslodavac": {
+            "id":"3",
+            "ime":"Josip Josipčević",
+            "e-mail":"josip.josipcevic@auto.hr"
+        },
+        "ucenik": {
+            "id":"2",
+            "ime":"Leo Sikirić",
+            "e-mail":"leo.sikiric@skole.hr"
+        },
+        "plaća":"5000 kn/mj",
+        "status": "3",
         "slika":"images/mehanicar.jpg"
     }
 ]
