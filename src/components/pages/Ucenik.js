@@ -28,7 +28,7 @@ function Ucenik(){
     var paidButton = <button className="reg_button paid"><PaidIcon style={{"color":"white"}}/></button>
     var deniedButton = <button className="reg_button denied"><ClearIcon style={{"color":"white"}}/></button>
     var allowedButton = <button onClick={TurnToWait} className="reg_button allowed"><SendIcon style={{"color":"white"}}/></button>
-    var errorButton = <button className="reg_button error"><ErrorIcon/></button>
+    var errorButton = <button className="reg_button error_"><ErrorIcon/></button>
     var waitingButton = <button className="reg_button waiting"><HourglassEmptyIcon style={{"color":"white"}}/></button>
 
     var AcceptButton = <button className="reg_button paid"><CheckIcon style={{"color":"white"}}/></button>;

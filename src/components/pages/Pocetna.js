@@ -2,14 +2,14 @@
 import '../../App.css';
 import Footer from '../Footer.js';
 import HeroSection from '../HeroSection';
-import Navbar from '../Navbar';
+import NavbarLoggedIn from '../NavBarLoggedIn';
 
 
 
 function Home (){
   return(
     <>
-      <Navbar/>
+      <NavbarLoggedIn/>
       <HeroSection />
       <Footer/>
     </>
