@@ -129,6 +129,9 @@ function Ucenik(){
                             <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value={user.zupanija} placeholder="županija"/></div>
                         </div>
                     </div>
+                            <div>
+                                 <div class="mt-5 text-center"><button class="btn btn-primary profile-button odjava" type="button">Odjava</button></div>
+                            </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-3 py-5">
