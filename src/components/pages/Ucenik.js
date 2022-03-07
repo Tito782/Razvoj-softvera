@@ -88,33 +88,29 @@ function Ucenik(){
                 <div class="col-md-5 border-right">
                     <div class="p-3 py-5">
                         <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h4 class="text-right">Profile Settings</h4>
+                            <h4 class="text-right">Korisnički podaci</h4>
                         </div>
                         <div class="row mt-2">
                             <div class="col-md-6">
-                                <label class="labels">Name</label>
+                                <label class="labels">Ime</label>
                                 <input type="text" class="form-control" placeholder="first name" value={user.ime}/>
                             </div>
                             <div class="col-md-6">
-                                <label class="labels">Surname</label>
+                                <label class="labels">Prezime</label>
                                 <input type="text" class="form-control" value={user.prezime} placeholder="surname"/>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-12">
-                                <label class="labels">Mobile Number</label>
+                                <label class="labels">Telefonski broj</label>
                                 <input type="text" class="form-control" placeholder="enter phone number" value={user.mob}/>
                             </div>
                             <div class="col-md-12">
-                                <label class="labels">Address Line 1</label>
+                                <label class="labels">Adresa</label>
                                 <input type="text" class="form-control" placeholder="enter address line 1" value={user.adresa}/>
                             </div>
                             <div class="col-md-12">
-                                <label class="labels">Address Line 2</label>
-                                <input type="text" class="form-control" placeholder="enter address line 2" value="N/A"/>
-                            </div>
-                            <div class="col-md-12">
-                                <label class="labels">Postcode</label>
+                                <label class="labels">ZIP</label>
                                 <input type="text" class="form-control" placeholder="enter address line 2" value={user.zip}/>
                             </div>
                             <div class="col-md-12">
@@ -122,7 +118,7 @@ function Ucenik(){
                                 <input type="text" class="form-control" placeholder="enter email id" value={user["e-mail"]}/>
                             </div>
                             <div class="col-md-12">
-                                <label class="labels">School</label>
+                                <label class="labels">Škola</label>
                                 <input type="text" class="form-control" placeholder="education" value={user.Skola}/>
                             </div>
                             <div class="col-md-12">
@@ -135,8 +131,8 @@ function Ucenik(){
                             </div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="Hrvatska" value=""/></div>
-                            <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value={user.zupanija} placeholder="županija"/></div>
+                            <div class="col-md-6"><label class="labels">Država</label><input type="text" class="form-control" placeholder="Hrvatska" value=""/></div>
+                            <div class="col-md-6"><label class="labels">Županija</label><input type="text" class="form-control" value={user.zupanija} placeholder="županija"/></div>
                         </div>
                     </div>
                             <div>
@@ -145,7 +141,7 @@ function Ucenik(){
                 </div>
                 <div class="col-md-4">
                     <div class="p-3 py-5">
-                        <h2 style={{"padding-left":"16px"}}>Poslovi</h2>
+                        <h2 style={{"padding-left":"16px"}}>Trenutni Ugovori</h2>
                         {Poslovi.map(element => {
                             if(element.ucenik.id === user.id){
                                return(<div className="poslovi_card" key={element.id}>
