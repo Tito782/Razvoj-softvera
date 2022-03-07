@@ -3,7 +3,7 @@
         "id":"0",
         "naslov":"Automehaničar",
         "poslodavac": {
-            "id":"4",
+            "id":"5",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },
@@ -18,7 +18,7 @@
     },
     {
         "id":"1",
-        "naslov":"Automehaničar",
+        "naslov":"Građevinar",
         "poslodavac": {
             "id":"4",
             "ime":"Josip Josipčević",
@@ -31,13 +31,13 @@
         },
         "plaća":"5000 kn/mj",
         "status": "1",
-        "slika":"images/mehanicar.jpg"
+        "slika":"images/gradevinar.jpg"
     },
     {
-        "id":"2",
-        "naslov":"Automehaničar",
+        "id":"3",
+        "naslov":"Vodoinstalater",
         "poslodavac": {
-            "id":"4",
+            "id":"7",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },
@@ -47,7 +47,24 @@
             "e-mail":"t.h@skole.hr"
         },
         "plaća":"5000 kn/mj",
-        "status": "2",
+        "status": "4",
+        "slika":"images/vodoinstalater.jpg"
+    },
+    {
+        "id":"4",
+        "naslov":"Konobar",
+        "poslodavac": {
+            "id":"3",
+            "ime":"Josip Josipčević",
+            "e-mail":"josip.josipcevic@auto.hr"
+        },
+        "ucenik": {
+            "id":"2",
+            "ime":"Leo Sikirić",
+            "e-mail":"leo.sikiric@skole.hr"
+        },
+        "plaća":"5000 kn/mj",
+        "status": "3",
         "slika":"images/mehanicar.jpg"
     }
 ]
