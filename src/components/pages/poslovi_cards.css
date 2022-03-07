@@ -1,6 +1,7 @@
 .card_img {
     max-height: 5.5rem;
     margin-left: -15px;
+    max-width: 132px;
   }
   
   .poslovi_card {

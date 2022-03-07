@@ -3,7 +3,7 @@
         "id":"0",
         "naslov":"Automehaničar",
         "poslodavac": {
-            "id":"5",
+            "id":"4",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },
@@ -37,7 +37,7 @@
         "id":"3",
         "naslov":"Vodoinstalater",
         "poslodavac": {
-            "id":"7",
+            "id":"4",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },
@@ -47,7 +47,7 @@
             "e-mail":"t.h@skole.hr"
         },
         "plaća":"5000 kn/mj",
-        "status": "4",
+        "status": "2",
         "slika":"images/vodoinstalater.jpg"
     },
     {
@@ -64,7 +64,7 @@
             "e-mail":"leo.sikiric@skole.hr"
         },
         "plaća":"5000 kn/mj",
-        "status": "3",
+        "status": "2",
         "slika":"images/mehanicar.jpg"
     }
 ]
