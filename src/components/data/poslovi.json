@@ -4,8 +4,8 @@
         "naslov":"Automehaničar",
         "poslodavac": {
             "id":"4",
-            "ime":"Josip Josipčević",
-            "e-mail":"josip.josipcevic@auto.hr"
+            "ime":"David Vukoša",
+            "e-mail":"david.vukosa@strabag.hr"
         },
         "ucenik": {
             "id":"1",
@@ -21,8 +21,8 @@
         "naslov":"Građevinar",
         "poslodavac": {
             "id":"4",
-            "ime":"Josip Josipčević",
-            "e-mail":"josip.josipcevic@auto.hr"
+            "ime":"David Vukoša",
+            "e-mail":"david.vukosa@strabag.hr"
         },
         "ucenik": {
             "id":"1",
@@ -38,8 +38,8 @@
         "naslov":"Vodoinstalater",
         "poslodavac": {
             "id":"4",
-            "ime":"Josip Josipčević",
-            "e-mail":"josip.josipcevic@auto.hr"
+            "ime":"David Vukoša",
+            "e-mail":"david.vukosa@strabag.hr"
         },
         "ucenik": {
             "id":"1",
@@ -54,9 +54,9 @@
         "id":"4",
         "naslov":"Konobar",
         "poslodavac": {
-            "id":"3",
-            "ime":"Josip Josipčević",
-            "e-mail":"josip.josipcevic@auto.hr"
+            "id":"4",
+            "ime":"David Vukoša",
+            "e-mail":"david.vukosa@strabag.hr"
         },
         "ucenik": {
             "id":"2",
