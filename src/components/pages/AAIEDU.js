@@ -1,6 +1,7 @@
 import React from 'react';
 import './AAIEDU.css';
 import Profile from '../data/profiles.json';
+import Button from "@mui/material/Button";
 
 function submitForm() {
 	let username = document.getElementById('username').value;
@@ -47,7 +48,7 @@ function UcenikPrijava() {
 					<input type="checkbox" id="toggle-password"/>
 					<label for="toggle-password">Pokaži zaporku</label>
 				</div>
-				<button onClick={submitForm} type="submit" class="login-btn" aria-label="Kliknite ovdje za prijavu svojim e-identitetom iz sustava AAI@EduHr" tabindex="3" name="Submit">PRIJAVA</button>
+				<Button onClick={submitForm} type="submit" class="login-btn" aria-label="Kliknite ovdje za prijavu svojim e-identitetom iz sustava AAI@EduHr" tabindex="3" name="Submit">PRIJAVA</Button>
 				<div class="bottom-links">
 					<p><a href="https://www.aaiedu.hr/pomoc" title="Kliknite ovdje za pomoć." target="_blank" rel="noreferrer">Pomoć</a></p>
 					<small class="version">Pišo v3.0</small>
