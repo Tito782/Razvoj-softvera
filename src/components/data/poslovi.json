@@ -34,7 +34,7 @@
         "slika":"images/gradevinar.jpg"
     },
     {
-        "id":"3",
+        "id":"2",
         "naslov":"Vodoinstalater",
         "poslodavac": {
             "id":"4",
@@ -47,8 +47,25 @@
             "e-mail":"t.h@skole.hr"
         },
         "plaća":"5000 kn/mj",
-        "status": "4",
+        "status": "3",
         "slika":"images/vodoinstalater.jpg"
+    },
+    {
+        "id":"3",
+        "naslov":"Konobar",
+        "poslodavac": {
+            "id":"5",
+            "ime":"David Vukoša",
+            "e-mail":"david.vukosa@strabag.hr"
+        },
+        "ucenik": {
+            "id":"2",
+            "ime":"Leo Sikirić",
+            "e-mail":"leo.sikiric@skole.hr"
+        },
+        "plaća":"5000 kn/mj",
+        "status": "3",
+        "slika":"images/mehanicar.jpg"
     },
     {
         "id":"4",
@@ -60,11 +77,11 @@
         },
         "ucenik": {
             "id":"2",
-            "ime":"Leo Sikirić",
-            "e-mail":"leo.sikiric@skole.hr"
+            "ime":"Marko Mirulica",
+            "e-mail":"marko.mirulica@skole.hr"
         },
         "plaća":"5000 kn/mj",
-        "status": "3",
+        "status": "2",
         "slika":"images/mehanicar.jpg"
     }
 ]

@@ -9,6 +9,7 @@ import { Button } from "../Button";
 //data
 import Profile from "../data/profiles.json"
 import Poslovi from "../data/poslovi.json"
+import Prijave from "../data/prijave.json"
 
 //mui-icons
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
@@ -16,18 +17,22 @@ import ClearIcon from '@mui/icons-material/Clear';
 import ErrorIcon from '@mui/icons-material/Error';
 import HourglassEmptyIcon from '@mui/icons-material/MoreHoriz';
 import CheckIcon from '@mui/icons-material/Check';
-
+import BlockIcon from '@mui/icons-material/Block';
+import PendingIcon from '@mui/icons-material/Pending';
 
 function Poslodavac(){
     let idx = localStorage.getItem('prof_index')
     let user = Profile.poslodavci[idx];
     window.scrollTo(0,0);
 
-    var autoPayButton = <button className="reg_button auto_pay"><AccessTimeIcon/></button>;
+    var autoPayButton = <button className="reg_button auto_pay"><AccessTimeIcon style={{"color":"white"}}/></button>;
     var paidButton = <button className="reg_button paid"><CheckIcon style={{"color":"white"}}/></button>
     var deniedButton = <button className="reg_button denied"><ClearIcon style={{"color":"white"}}/></button>
     var errorButton = <button className="reg_button error"><ErrorIcon/></button>
     var waitingButton = <button className="reg_button waiting"><HourglassEmptyIcon style={{"color":"white"}}/></button>
+    var blockedButton = <button className="reg_button denied"><BlockIcon style={{"color":"white"}}/></button>
+    var waitButton = <button className="reg_button waiting"><PendingIcon style={{"color":"white"}}/></button>
+    var AcceptButton = <button className="reg_button paid"><CheckIcon style={{"color":"white"}}/></button>;
     
     function ChangeInnerHTML(e) {
         let bjbutton = (<div>
@@ -56,13 +61,22 @@ function Poslodavac(){
             case "1":
                 return paidButton;
             case "2": 
-                return deniedButton;
+                return blockedButton;
             case "3":
                 return waitingButton;
-            case "4":
-                return autoPayButton;
             default:
                 return errorButton;
+        }
+    }
+
+    function SwitchCasePrijave (props) {
+        switch(props.value) {
+            case "0": 
+                return AcceptButton;
+            case "1":
+                return deniedButton;
+            default:
+                return waitButton;
         }
     }
     
@@ -145,14 +159,33 @@ function Poslodavac(){
                                         <p className="poslodavac_ime">{element.ucenik.ime}</p>
                                         <p className="email">{element.ucenik["e-mail"]}</p>
                                     </div>
-                                    <div id={"button_" + element.id} className="button_cont" onMouseEnter={element.status === "3" ? ChangeInnerHTML : ''}>
+                                    <div id={"button_" + element.id} className="button_cont">
                                         <SwitchCase value={element.status} id={element.id}></SwitchCase>
                                     </div>
                                 </div>); 
                             }
                             return(<div></div>);
                         })}
-                    </div>     
+                    </div>   
+                    <div class="p-3 py-5">
+                        <h2 style={{"padding-left":"16px"}}>Zahtjevi za poslove</h2>
+                        {Prijave.map(element => {
+                            if(element.poslodavac.id === user.id){
+                                return(<div className="poslovi_card" key={element.id}>
+                                    <img className="card_img" src={element.slika} alt="Slika"></img>
+                                    <div className="info_cont">
+                                        <h3>{element.naslov}</h3>
+                                        <p className="poslodavac_ime">{element.ucenik.ime}</p>
+                                        <p className="email">{element.ucenik["e-mail"]}</p>
+                                    </div>
+                                    <div id={"button_" + element.id} className="button_cont" onMouseEnter={element.status === "2" ? ChangeInnerHTML : ''}>
+                                        <SwitchCasePrijave value={element.status}></SwitchCasePrijave>
+                                    </div>
+                                </div> );
+                            }
+                            return(<div></div>)
+                        })}
+                    </div>    
                 </div>
             </div>
         </div>

@@ -26,8 +26,8 @@
         },
         "ucenik": {
             "id":"1",
-            "ime":"Tomislav Hrvatina",
-            "e-mail":"t.h@skole.hr"
+            "ime":"Mislav Hrvatina",
+            "e-mail":"m.h@skole.hr"
         },
         "plaća":"5000 kn/mj",
         "status": "1",
@@ -43,8 +43,8 @@
         },
         "ucenik": {
             "id":"1",
-            "ime":"Tomislav Hrvatina",
-            "e-mail":"t.h@skole.hr"
+            "ime":"Stipe Slalom",
+            "e-mail":"stipe.slalom@skole.hr"
         },
         "plaća":"5000 kn/mj",
         "status": "2",
@@ -54,7 +54,7 @@
         "id":"4",
         "naslov":"Konobar",
         "poslodavac": {
-            "id":"3",
+            "id":"4",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },

@@ -1,5 +1,4 @@
 import React from "react";
-import reactDom from "react-dom";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "./Ucenik.css";
@@ -15,7 +14,6 @@ import Prijave from "../data/prijave.json"
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import ClearIcon from '@mui/icons-material/Clear';
 import PaidIcon from '@mui/icons-material/Paid';
-import SendIcon from '@mui/icons-material/Send';
 import ErrorIcon from '@mui/icons-material/Error';
 import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty';
 import CheckIcon from '@mui/icons-material/Check';
@@ -26,19 +24,14 @@ function Ucenik(){
     let user = Profile.ucenici[idx];
     window.scrollTo(0,0);
     
-    var autoPayButton = <button className="reg_button auto_pay"><AccessTimeIcon/></button>;
+    var autoPayButton = <button className="reg_button auto_pay"><AccessTimeIcon style={{"color":"white"}}/></button>;
     var paidButton = <button className="reg_button paid"><PaidIcon style={{"color":"white"}}/></button>
     var deniedButton = <button className="reg_button denied"><ClearIcon style={{"color":"white"}}/></button>
-    var allowedButton = <button onClick={TurnToWait} className="reg_button allowed"><SendIcon style={{"color":"white"}}/></button>
     var errorButton = <button className="reg_button error_"><ErrorIcon/></button>
     var waitingButton = <button className="reg_button waiting"><HourglassEmptyIcon style={{"color":"white"}}/></button>
 
     var AcceptButton = <button className="reg_button paid"><CheckIcon style={{"color":"white"}}/></button>;
     var waitButton = <button className="reg_button waiting"><PendingIcon style={{"color":"white"}}/></button>
-
-    function TurnToWait() {
-        reactDom.render(waitingButton, document.getElementById('button_3'))
-    }
 
     function SwitchCase (props) {
         switch(props.value) {
@@ -50,8 +43,6 @@ function Ucenik(){
                 return deniedButton;
             case "3":
                 return waitingButton;
-            case "4":
-                return allowedButton;
             default:
                 return errorButton;
         }
