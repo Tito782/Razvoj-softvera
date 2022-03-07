@@ -13,7 +13,8 @@
                 "mob":"091 234 5678",
                 "adresa":"Put Tomislava 36, Zadar",
                 "zip":"23000",
-                "zupanija":"Zadarska županija"
+                "zupanija":"Zadarska županija",
+                "iban":"HR8924840081102131080"
             },
             {
                 "id":"2",

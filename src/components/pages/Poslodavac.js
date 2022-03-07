@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "./Poslodavac.css";
 import "./poslovi_cards.css"
+import { Button } from "../Button";
 
 //data
 import Profile from "../data/profiles.json"
@@ -36,6 +37,10 @@ function Poslodavac(){
                 <button onClick={ChangeToDenied} className="reg_button denied"><ClearIcon style={{"color":"white"}}/></button>
             </div>);
         reactDom.render(bjbutton, e.target)
+    }
+
+    function changeToNA(){
+        localStorage.setItem('prof_type', 'n');
     }
 
     function ChangeToPaid(e) {
@@ -125,6 +130,9 @@ function Poslodavac(){
                             <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="Hrvatska" value=""/></div>
                             <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value={user.zupanija} placeholder="županija"/></div>
                         </div>
+                        <div>
+                                 <div class="mt-5 text-center"><Button buttonStyle={'btn--logout'} buttonSize={'btn-size-lg'} onclick={changeToNA}>Odjava</Button></div>
+                            </div>
                     </div>
                 </div>
                 <div class="col-md-4">

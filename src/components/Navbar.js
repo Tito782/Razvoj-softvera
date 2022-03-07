@@ -1,29 +1,31 @@
-import React, {useState, useEffect} from 'react';
+import { AccountCircleRounded } from '@material-ui/icons';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
+import { ButtonUcenik } from './ButtonUcenik';
+import { ButtonPoslodavac } from './ButtonPoslodavac';
 import './Navbar.css';
 
 function Navbar() {
     const [click, setClick] =  useState(false);
-    const [button, setButton] = useState(true);
+
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
-    const showButton = () => {
-        if(window.innerWidth <= 960) {
-            setButton(false);
-        }
-        else{
-            setButton(true);
+    let type = localStorage.getItem('prof_type');
+
+    function SwitchCase(){
+        switch(type) {
+            case 'p': 
+                return <ButtonPoslodavac buttonStyle={'btn--outline'}><AccountCircleRounded/></ButtonPoslodavac>;
+            case 'u': 
+                return <ButtonUcenik buttonStyle={'btn--outline'}><AccountCircleRounded/></ButtonUcenik>;
+            default :
+                return <Button buttonStyle={'btn--outline'}>Prijava</Button>
         }
     }
 
-    useEffect(() => {
-        showButton()
-    }, []);
-
-    window.addEventListener('resize', showButton); 
 
 
 
@@ -57,7 +59,7 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                {button && <Button buttonStyle={'btn--outline'}>Prijava</Button>}
+                <SwitchCase></SwitchCase>
             </div>
         </nav>
   </>

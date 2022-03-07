@@ -3,7 +3,7 @@
         "id":"0",
         "naslov":"Automehaničar",
         "poslodavac": {
-            "id":"4",
+            "id":"5",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },
@@ -37,7 +37,7 @@
         "id":"2",
         "naslov":"Automehaničar",
         "poslodavac": {
-            "id":"3",
+            "id":"5",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },
@@ -54,7 +54,7 @@
         "id":"3",
         "naslov":"Automehaničar",
         "poslodavac": {
-            "id":"4",
+            "id":"5",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },
@@ -71,7 +71,7 @@
         "id":"4",
         "naslov":"Automehaničar",
         "poslodavac": {
-            "id":"3",
+            "id":"5",
             "ime":"Josip Josipčević",
             "e-mail":"josip.josipcevic@auto.hr"
         },

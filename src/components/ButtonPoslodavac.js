@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 
 //Vrste Gumbova: Ispunjen i Prazan
-const STYLES = ['btn--primary', 'btn--outline', 'btn--logout']
-const SIZES = ['btn--medium', 'btn--large', 'btn-size-lg']
+const STYLES = ['btn--primary', 'btn--outline']
+const SIZES = ['btn--medium', 'btn--large']
 
 
-export const Button = ({
+export const ButtonPoslodavac = ({
     children, 
     type, 
     onclick, 
@@ -19,7 +19,7 @@ export const Button = ({
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
 
     return(
-        <Link to = '/prijava' className='btn-mobile'>
+        <Link to = '/poslodavac' className='btn-mobile'>
                 <button 
                 className = {`btn ${checkButtonStyle} ${checkButtonSize}`}
                 onClick = {onclick}
@@ -30,4 +30,3 @@ export const Button = ({
         </Link>
     )
 };
-

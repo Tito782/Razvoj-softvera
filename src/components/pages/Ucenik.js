@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "./Ucenik.css";
 import "./poslovi_cards.css"
+import { Button } from '../Button';
 
 //data
 import Profile from "../data/profiles.json"
@@ -67,6 +68,10 @@ function Ucenik(){
         }
     }
 
+    function changeToNA(){
+        localStorage.setItem('prof_type', 'n');
+    }
+
     return(      
         <>
         <Navbar/>
@@ -124,6 +129,10 @@ function Ucenik(){
                                 <label class="labels">Smjer</label>
                                 <input type="text" class="form-control" placeholder="education" value={user.Smjer}/>
                             </div>
+                            <div class="col-md-12">
+                                <label class="labels">Žiro račun</label>
+                                <input type="text" class="form-control" placeholder="education" value={user.iban}/>
+                            </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="Hrvatska" value=""/></div>
@@ -131,7 +140,7 @@ function Ucenik(){
                         </div>
                     </div>
                             <div>
-                                 <div class="mt-5 text-center"><button class="btn btn-primary profile-button odjava" type="button">Odjava</button></div>
+                                 <div class="mt-5 text-center"><Button buttonStyle={'btn--logout'} buttonSize={'btn-size-lg'} onclick={changeToNA}>Odjava</Button></div>
                             </div>
                 </div>
                 <div class="col-md-4">

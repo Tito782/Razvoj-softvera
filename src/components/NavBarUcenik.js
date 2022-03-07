@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from './Button';
+import { ButtonUcenik } from './ButtonUcenik';
 import './Navbar.css';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 
-function Navbar() {
+function NavbarUcenik() {
     const [click, setClick] =  useState(false);
     const [button, setButton] = useState(true);
 
@@ -57,11 +57,11 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                {button && <Button buttonStyle={'btn--outline'}><AccountCircleRoundedIcon/></Button>}
+                {button && <ButtonUcenik buttonStyle={'btn--outline'}><AccountCircleRoundedIcon/></ButtonUcenik>}
             </div>
         </nav>
   </>
   ); 
 }
 
-export default Navbar;
+export default NavbarUcenik;

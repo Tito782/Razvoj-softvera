@@ -10,20 +10,21 @@
 }
 .odjava{
   color: #fff;
-  background-color: red;
+  background: red;
+  border-radius: 10px;
 }
 
 .profile-button:hover {
-    background-color: red;
+    background: red;
 }
 
 .profile-button:focus {
-    background-color: red;
+    background: red;
     box-shadow: none
 }
 
 .profile-button:active {
-    background-color: red;
+    background: red;
     box-shadow: none
 }
 
