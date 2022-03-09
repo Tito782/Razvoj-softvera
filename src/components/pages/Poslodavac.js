@@ -96,33 +96,29 @@ function Poslodavac(){
                 <div class="col-md-5 border-right">
                     <div class="p-3 py-5">
                         <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h4 class="text-right">Profile Settings</h4>
+                            <h4 class="text-right">Korisnički podaci</h4>
                         </div>
                         <div class="row mt-2">
                             <div class="col-md-6">
-                                <label class="labels">Name</label>
+                                <label class="labels">Ime</label>
                                 <input type="text" class="form-control" placeholder="first name" value={user.ime}/>
                             </div>
                             <div class="col-md-6">
-                                <label class="labels">Surname</label>
+                                <label class="labels">Prezime</label>
                                 <input type="text" class="form-control" value={user.prezime} placeholder="surname"/>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-12">
-                                <label class="labels">Mobile Number</label>
+                                <label class="labels">Telefonski broj</label>
                                 <input type="text" class="form-control" placeholder="enter phone number" value={user.mob}/>
                             </div>
                             <div class="col-md-12">
-                                <label class="labels">Address Line 1</label>
+                                <label class="labels">Adresa</label>
                                 <input type="text" class="form-control" placeholder="enter address line 1" value={user.adresa}/>
                             </div>
                             <div class="col-md-12">
-                                <label class="labels">Address Line 2</label>
-                                <input type="text" class="form-control" placeholder="enter address line 2" value="N/A"/>
-                            </div>
-                            <div class="col-md-12">
-                                <label class="labels">Postcode</label>
+                                <label class="labels">ZIP</label>
                                 <input type="text" class="form-control" placeholder="enter address line 2" value={user.zip}/>
                             </div>
                             <div class="col-md-12">
@@ -134,7 +130,7 @@ function Poslodavac(){
                                 <input type="text" class="form-control" placeholder="education" value={user.Titula}/>
                             </div>
                             <div class="col-md-12">
-                                <label class="labels">KOmpanija</label>
+                                <label class="labels">Kompanija</label>
                                 <input type="text" class="form-control" placeholder="education" value={user.Kompanija}/>
                             </div>
                         </div>
